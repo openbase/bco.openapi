@@ -1,0 +1,51 @@
+openapi: 3.0.0
+info:
+  title: Sample API
+  description: Optional multiline or single-line description in [CommonMark](http://commonmark.org/help/) or HTML.
+  version: 0.1.9
+
+servers:
+  - url: http://localhost:8000
+    description: Optional server description, e.g. Main (production) server
+
+components:
+  schemas:
+    LightData:
+      properties:
+        id:
+          type: string
+        power_state:
+          $ref: '#/components/schemas/PowerState'
+    PowerState:
+      properties:
+        value:
+          type: string
+          example: ON
+
+paths:
+  /light:
+    get:
+      summary: Returns the light unit data.
+      responses:
+        '200':
+          description: A light data object.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LightData'
+        default:
+          description: Unexpected error
+    post:
+      summary: Set the light unit data.
+      requestBody:
+        required: true
+        content: application/json:
+          schema:
+            $ref: '#/components/schemas/LightData'
+      responses:
+        '201':
+          description: Set successful.
+        default:
+          description: Unexpected error
+
+
