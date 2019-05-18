@@ -39,9 +39,10 @@ paths:
       summary: Set the light unit data.
       requestBody:
         required: true
-        content: application/json:
-          schema:
-            $ref: '#/components/schemas/LightData'
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LightData'
       responses:
         '201':
           description: Set successful.
