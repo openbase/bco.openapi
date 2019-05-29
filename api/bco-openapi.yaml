@@ -1,13 +1,3 @@
-openapi: 3.0.0
-info:
-  title: Sample API
-  description: Optional multiline or single-line description in [CommonMark](http://commonmark.org/help/) or HTML.
-  version: 0.1.9
-
-servers:
-  - url: http://localhost:8000
-    description: Optional server description, e.g. Main (production) server
-
 components:
   schemas:
     LightData:
@@ -16,37 +6,3568 @@ components:
           type: string
         power_state:
           $ref: '#/components/schemas/PowerState'
+    OpenbaseActionDescription:
+      properties:
+        action_cause:
+          items:
+            $ref: '#/components/schemas/OpenbaseActionReference'
+          type: array
+        action_impact:
+          items:
+            $ref: '#/components/schemas/OpenbaseActionReference'
+          type: array
+        action_initiator:
+          $ref: '#/components/schemas/OpenbaseActionInitiator'
+        action_state:
+          $ref: '#/components/schemas/OpenbaseActionState'
+        cancel:
+          type: boolean
+        category:
+          items:
+            $ref: '#/components/schemas/OpenbaseActionEmphasis.Category'
+          type: array
+        description:
+          $ref: '#/components/schemas/OpenbaseMultiLanguageText'
+        execution_time_period:
+          format: int64
+          type: integer
+        extend:
+          type: boolean
+        id:
+          type: string
+        intermediary:
+          type: boolean
+        interruptible:
+          type: boolean
+        label:
+          $ref: '#/components/schemas/OpenbaseLabel'
+        last_extension_timestamp:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+        priority:
+          $ref: '#/components/schemas/OpenbaseActionPriority.Priority'
+        schedulable:
+          type: boolean
+        service_state_description:
+          $ref: '#/components/schemas/OpenbaseServiceStateDescription'
+        termination_timestamp:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+        timestamp:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+      type: object
+    OpenbaseActionEmphasis:
+      properties: {}
+      type: object
+    OpenbaseActionEmphasis.Category:
+      enum:
+      - SAFETY
+      - SECURITY
+      - ECONOMY
+      - COMFORT
+      type: string
+    OpenbaseActionInitiator:
+      properties:
+        authenticated_by:
+          type: string
+        authorized_by:
+          type: string
+        initiator_id:
+          type: string
+        initiator_type:
+          $ref: '#/components/schemas/OpenbaseActionInitiator.InitiatorType'
+      type: object
+    OpenbaseActionInitiator.InitiatorType:
+      enum:
+      - SYSTEM
+      - HUMAN
+      type: string
+    OpenbaseActionParameter:
+      properties:
+        action_initiator:
+          $ref: '#/components/schemas/OpenbaseActionInitiator'
+        auth_token:
+          $ref: '#/components/schemas/OpenbaseAuthToken'
+        category:
+          items:
+            $ref: '#/components/schemas/OpenbaseActionEmphasis.Category'
+          type: array
+        cause:
+          $ref: '#/components/schemas/OpenbaseActionDescription'
+        execution_time_period:
+          format: int64
+          type: integer
+        interruptible:
+          type: boolean
+        label:
+          $ref: '#/components/schemas/OpenbaseLabel'
+        priority:
+          $ref: '#/components/schemas/OpenbaseActionPriority.Priority'
+        schedulable:
+          type: boolean
+        service_state_description:
+          $ref: '#/components/schemas/OpenbaseServiceStateDescription'
+      type: object
+    OpenbaseActionPriority:
+      properties: {}
+      type: object
+    OpenbaseActionPriority.Priority:
+      enum:
+      - 'NO'
+      - LOW
+      - NORMAL
+      - HIGH
+      - URGENT
+      - EMERGENCY
+      type: string
+    OpenbaseActionReference:
+      properties:
+        action_id:
+          type: string
+        action_initiator:
+          $ref: '#/components/schemas/OpenbaseActionInitiator'
+        category:
+          items:
+            $ref: '#/components/schemas/OpenbaseActionEmphasis.Category'
+          type: array
+        execution_time_period:
+          format: int64
+          type: integer
+        interruptible:
+          type: boolean
+        priority:
+          $ref: '#/components/schemas/OpenbaseActionPriority.Priority'
+        schedulable:
+          type: boolean
+        service_state_description:
+          $ref: '#/components/schemas/OpenbaseServiceStateDescription'
+        timestamp:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+      type: object
+    OpenbaseActionState:
+      properties:
+        last_value_occurrence:
+          items:
+            $ref: '#/components/schemas/OpenbaseActionState.MapFieldEntry'
+          type: array
+        value:
+          $ref: '#/components/schemas/OpenbaseActionState.State'
+      type: object
+    OpenbaseActionState.MapFieldEntry:
+      properties:
+        key:
+          $ref: '#/components/schemas/OpenbaseActionState.State'
+        value:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+      type: object
+    OpenbaseActionState.State:
+      enum:
+      - INITIALIZED
+      - SCHEDULED
+      - INITIATING
+      - EXECUTING
+      - EXECUTION_FAILED
+      - FINISHING
+      - FINISHED
+      - ABORTING
+      - ABORTED
+      - ABORTING_FAILED
+      - REJECTED
+      - CANCELING
+      - CANCELED
+      type: string
+    OpenbaseActivationState:
+      properties:
+        last_value_occurrence:
+          items:
+            $ref: '#/components/schemas/OpenbaseActivationState.MapFieldEntry'
+          type: array
+        responsible_action:
+          $ref: '#/components/schemas/OpenbaseActionDescription'
+        timestamp:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+        value:
+          $ref: '#/components/schemas/OpenbaseActivationState.State'
+      type: object
+    OpenbaseActivationState.MapFieldEntry:
+      properties:
+        key:
+          $ref: '#/components/schemas/OpenbaseActivationState.State'
+        value:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+      type: object
+    OpenbaseActivationState.State:
+      enum:
+      - DEACTIVE
+      - INACTIVE
+      - ACTIVE
+      type: string
+    OpenbaseActivityConfig:
+      properties:
+        activity_template_id:
+          type: string
+        description:
+          $ref: '#/components/schemas/OpenbaseMultiLanguageText'
+        id:
+          type: string
+        individual_service_state_description:
+          items:
+            $ref: '#/components/schemas/OpenbaseActivityConfig.MapFieldEntry'
+          type: array
+        label:
+          $ref: '#/components/schemas/OpenbaseLabel'
+        meta_config:
+          $ref: '#/components/schemas/OpenbaseMetaConfig'
+        service_state_description:
+          items:
+            $ref: '#/components/schemas/OpenbaseServiceStateDescription'
+          type: array
+      type: object
+    OpenbaseActivityConfig.MapFieldEntry:
+      properties:
+        key:
+          type: string
+        value:
+          items:
+            $ref: '#/components/schemas/OpenbaseServiceStateDescription'
+          type: array
+      type: object
+    OpenbaseActivityMultiState:
+      properties:
+        activity_id:
+          items:
+            type: string
+          type: array
+        responsible_action:
+          $ref: '#/components/schemas/OpenbaseActionDescription'
+        state_transaction_reference:
+          format: int64
+          type: integer
+        timestamp:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+      type: object
+    OpenbaseActivityRegistryData:
+      properties:
+        activity_config:
+          items:
+            $ref: '#/components/schemas/OpenbaseActivityConfig'
+          type: array
+        activity_config_registry_consistent:
+          type: boolean
+        activity_config_registry_read_only:
+          type: boolean
+        label:
+          type: string
+        transaction_id:
+          format: int64
+          type: integer
+      type: object
+    OpenbaseActivityState:
+      properties:
+        activity_id:
+          type: string
+        responsible_action:
+          $ref: '#/components/schemas/OpenbaseActionDescription'
+        timestamp:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+      type: object
+    OpenbaseActivityTemplate:
+      properties:
+        activity_type:
+          $ref: '#/components/schemas/OpenbaseActivityTemplate.ActivityType'
+        description:
+          $ref: '#/components/schemas/OpenbaseMultiLanguageText'
+        id:
+          type: string
+        label:
+          $ref: '#/components/schemas/OpenbaseLabel'
+        meta_config:
+          $ref: '#/components/schemas/OpenbaseMetaConfig'
+      type: object
+    OpenbaseActivityTemplate.ActivityType:
+      enum:
+      - OTHER
+      - RELAXING
+      - SLEEPING
+      - WORKING
+      - EATING
+      - COOKING
+      - CLEANING
+      - CELEBRATING
+      type: string
+    OpenbaseAgentClass:
+      properties:
+        category:
+          items:
+            $ref: '#/components/schemas/OpenbaseActionEmphasis.Category'
+          type: array
+        description:
+          $ref: '#/components/schemas/OpenbaseMultiLanguageText'
+        id:
+          type: string
+        interruptible:
+          type: boolean
+        label:
+          $ref: '#/components/schemas/OpenbaseLabel'
+        meta_config:
+          $ref: '#/components/schemas/OpenbaseMetaConfig'
+        priority:
+          $ref: '#/components/schemas/OpenbaseActionPriority.Priority'
+        schedulable:
+          type: boolean
+      type: object
+    OpenbaseAgentConfig:
+      properties:
+        agent_class_id:
+          type: string
+        autostart:
+          type: boolean
+      type: object
+    OpenbaseAgentData:
+      properties:
+        action:
+          items:
+            $ref: '#/components/schemas/OpenbaseActionDescription'
+          type: array
+        activation_state:
+          $ref: '#/components/schemas/OpenbaseActivationState'
+        activation_state_last:
+          $ref: '#/components/schemas/OpenbaseActivationState'
+        activation_state_requested:
+          $ref: '#/components/schemas/OpenbaseActivationState'
+        alias:
+          items:
+            type: string
+          type: array
+        emphasis_state:
+          $ref: '#/components/schemas/OpenbaseEmphasisState'
+        emphasis_state_last:
+          $ref: '#/components/schemas/OpenbaseEmphasisState'
+        emphasis_state_requested:
+          $ref: '#/components/schemas/OpenbaseEmphasisState'
+        id:
+          type: string
+        transaction_id:
+          format: int64
+          type: integer
+      type: object
+    OpenbaseAlarmState:
+      properties:
+        last_value_occurrence:
+          items:
+            $ref: '#/components/schemas/OpenbaseAlarmState.MapFieldEntry'
+          type: array
+        responsible_action:
+          $ref: '#/components/schemas/OpenbaseActionDescription'
+        timestamp:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+        value:
+          $ref: '#/components/schemas/OpenbaseAlarmState.State'
+      type: object
+    OpenbaseAlarmState.MapFieldEntry:
+      properties:
+        key:
+          $ref: '#/components/schemas/OpenbaseAlarmState.State'
+        value:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+      type: object
+    OpenbaseAlarmState.State:
+      enum:
+      - NO_ALARM
+      - ALARM
+      type: string
+    OpenbaseAppClass:
+      properties:
+        binding_config:
+          $ref: '#/components/schemas/OpenbaseBindingConfig'
+        category:
+          items:
+            $ref: '#/components/schemas/OpenbaseActionEmphasis.Category'
+          type: array
+        description:
+          $ref: '#/components/schemas/OpenbaseMultiLanguageText'
+        id:
+          type: string
+        label:
+          $ref: '#/components/schemas/OpenbaseLabel'
+        meta_config:
+          $ref: '#/components/schemas/OpenbaseMetaConfig'
+        priority:
+          $ref: '#/components/schemas/OpenbaseActionPriority.Priority'
+        unit_template_config:
+          items:
+            $ref: '#/components/schemas/OpenbaseUnitTemplateConfig'
+          type: array
+      type: object
+    OpenbaseAppConfig:
+      properties:
+        app_class_id:
+          type: string
+        autostart:
+          type: boolean
+        unit_id:
+          items:
+            type: string
+          type: array
+      type: object
+    OpenbaseAppData:
+      properties:
+        action:
+          items:
+            $ref: '#/components/schemas/OpenbaseActionDescription'
+          type: array
+        activation_state:
+          $ref: '#/components/schemas/OpenbaseActivationState'
+        activation_state_last:
+          $ref: '#/components/schemas/OpenbaseActivationState'
+        activation_state_requested:
+          $ref: '#/components/schemas/OpenbaseActivationState'
+        alias:
+          items:
+            type: string
+          type: array
+        id:
+          type: string
+        transaction_id:
+          format: int64
+          type: integer
+      type: object
+    OpenbaseAudioSourceData:
+      properties:
+        action:
+          items:
+            $ref: '#/components/schemas/OpenbaseActionDescription'
+          type: array
+        alias:
+          items:
+            type: string
+          type: array
+        id:
+          type: string
+        transaction_id:
+          format: int64
+          type: integer
+      type: object
+    OpenbaseAuthToken:
+      properties:
+        authentication_token:
+          type: string
+        authorization_token:
+          type: string
+      type: object
+    OpenbaseAuthenticatedValue:
+      properties:
+        authentication_token:
+          type: string
+        authorization_token:
+          type: string
+        ticket_authenticator_wrapper:
+          $ref: '#/components/schemas/OpenbaseTicketAuthenticatorWrapper'
+        transaction_id:
+          format: int64
+          type: integer
+        value:
+          type: string
+      type: object
+    OpenbaseAuthenticationToken:
+      properties:
+        user_id:
+          type: string
+      type: object
+    OpenbaseAuthenticator:
+      properties:
+        timestamp:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+        user_client_pair:
+          $ref: '#/components/schemas/OpenbaseUserClientPair'
+      type: object
+    OpenbaseAuthorizationGroupConfig:
+      properties:
+        member_id:
+          items:
+            type: string
+          type: array
+      type: object
+    OpenbaseAuthorizationGroupData:
+      properties:
+        action:
+          items:
+            $ref: '#/components/schemas/OpenbaseActionDescription'
+          type: array
+        activity_state:
+          items:
+            $ref: '#/components/schemas/OpenbaseActivityState'
+          type: array
+        activity_state_last:
+          items:
+            $ref: '#/components/schemas/OpenbaseActivityState'
+          type: array
+        activity_state_requested:
+          items:
+            $ref: '#/components/schemas/OpenbaseActivityState'
+          type: array
+        alias:
+          items:
+            type: string
+          type: array
+        id:
+          type: string
+        presence_state:
+          $ref: '#/components/schemas/OpenbasePresenceState'
+        presence_state_last:
+          $ref: '#/components/schemas/OpenbasePresenceState'
+        transaction_id:
+          format: int64
+          type: integer
+      type: object
+    OpenbaseAuthorizationToken:
+      properties:
+        permission_rule:
+          items:
+            $ref: '#/components/schemas/OpenbaseAuthorizationToken.PermissionRule'
+          type: array
+        user_id:
+          type: string
+      type: object
+    OpenbaseAuthorizationToken.PermissionRule:
+      properties:
+        filter:
+          type: boolean
+        permission:
+          $ref: '#/components/schemas/OpenbasePermission'
+        service_template_id:
+          type: string
+        unit_id:
+          type: string
+        unit_template_id:
+          type: string
+      type: object
+    OpenbaseAvailabilityState:
+      properties:
+        last_value_occurrence:
+          items:
+            $ref: '#/components/schemas/OpenbaseAvailabilityState.MapFieldEntry'
+          type: array
+        responsible_action:
+          $ref: '#/components/schemas/OpenbaseActionDescription'
+        timestamp:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+        value:
+          $ref: '#/components/schemas/OpenbaseAvailabilityState.State'
+      type: object
+    OpenbaseAvailabilityState.MapFieldEntry:
+      properties:
+        key:
+          $ref: '#/components/schemas/OpenbaseAvailabilityState.State'
+        value:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+      type: object
+    OpenbaseAvailabilityState.State:
+      enum:
+      - ACTIVATING
+      - ONLINE
+      - DEACTIVATING
+      - OFFLINE
+      type: string
+    OpenbaseAxisAlignedBoundingBox3DFloat:
+      properties:
+        depth:
+          format: float
+          type: number
+        height:
+          format: float
+          type: number
+        left_front_bottom:
+          $ref: '#/components/schemas/OpenbaseTranslation'
+        width:
+          format: float
+          type: number
+      type: object
+    OpenbaseBatteryData:
+      properties:
+        action:
+          items:
+            $ref: '#/components/schemas/OpenbaseActionDescription'
+          type: array
+        alias:
+          items:
+            type: string
+          type: array
+        battery_state:
+          $ref: '#/components/schemas/OpenbaseBatteryState'
+        battery_state_last:
+          $ref: '#/components/schemas/OpenbaseBatteryState'
+        id:
+          type: string
+        transaction_id:
+          format: int64
+          type: integer
+      type: object
+    OpenbaseBatteryState:
+      properties:
+        last_value_occurrence:
+          items:
+            $ref: '#/components/schemas/OpenbaseBatteryState.MapFieldEntry'
+          type: array
+        level:
+          format: double
+          type: number
+        responsible_action:
+          $ref: '#/components/schemas/OpenbaseActionDescription'
+        timestamp:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+        value:
+          $ref: '#/components/schemas/OpenbaseBatteryState.State'
+      type: object
+    OpenbaseBatteryState.MapFieldEntry:
+      properties:
+        key:
+          $ref: '#/components/schemas/OpenbaseBatteryState.State'
+        value:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+      type: object
+    OpenbaseBatteryState.State:
+      enum:
+      - OK
+      - CRITICAL
+      - INSUFFICIENT
+      type: string
+    OpenbaseBindingConfig:
+      properties:
+        binding_id:
+          type: string
+        meta_config:
+          $ref: '#/components/schemas/OpenbaseMetaConfig'
+      type: object
+    OpenbaseBlindState:
+      properties:
+        last_value_occurrence:
+          items:
+            $ref: '#/components/schemas/OpenbaseBlindState.MapFieldEntry'
+          type: array
+        opening_ratio:
+          format: double
+          type: number
+        responsible_action:
+          $ref: '#/components/schemas/OpenbaseActionDescription'
+        timestamp:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+        value:
+          $ref: '#/components/schemas/OpenbaseBlindState.State'
+      type: object
+    OpenbaseBlindState.MapFieldEntry:
+      properties:
+        key:
+          $ref: '#/components/schemas/OpenbaseBlindState.State'
+        value:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+      type: object
+    OpenbaseBlindState.State:
+      enum:
+      - DOWN
+      - STOP
+      - UP
+      type: string
+    OpenbaseBrightnessState:
+      properties:
+        brightness:
+          format: double
+          type: number
+        brightness_data_unit:
+          $ref: '#/components/schemas/OpenbaseBrightnessState.DataUnit'
+        responsible_action:
+          $ref: '#/components/schemas/OpenbaseActionDescription'
+        timestamp:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+      type: object
+    OpenbaseBrightnessState.DataUnit:
+      enum:
+      - PERCENT
+      type: string
+    OpenbaseButtonData:
+      properties:
+        action:
+          items:
+            $ref: '#/components/schemas/OpenbaseActionDescription'
+          type: array
+        alias:
+          items:
+            type: string
+          type: array
+        button_state:
+          $ref: '#/components/schemas/OpenbaseButtonState'
+        button_state_last:
+          $ref: '#/components/schemas/OpenbaseButtonState'
+        id:
+          type: string
+        transaction_id:
+          format: int64
+          type: integer
+      type: object
+    OpenbaseButtonState:
+      properties:
+        last_value_occurrence:
+          items:
+            $ref: '#/components/schemas/OpenbaseButtonState.MapFieldEntry'
+          type: array
+        responsible_action:
+          $ref: '#/components/schemas/OpenbaseActionDescription'
+        timestamp:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+        value:
+          $ref: '#/components/schemas/OpenbaseButtonState.State'
+      type: object
+    OpenbaseButtonState.MapFieldEntry:
+      properties:
+        key:
+          $ref: '#/components/schemas/OpenbaseButtonState.State'
+        value:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+      type: object
+    OpenbaseButtonState.State:
+      enum:
+      - RELEASED
+      - PRESSED
+      - DOUBLE_PRESSED
+      type: string
+    OpenbaseClassRegistryData:
+      properties:
+        agent_class:
+          items:
+            $ref: '#/components/schemas/OpenbaseAgentClass'
+          type: array
+        agent_class_registry_consistent:
+          type: boolean
+        agent_class_registry_read_only:
+          type: boolean
+        app_class:
+          items:
+            $ref: '#/components/schemas/OpenbaseAppClass'
+          type: array
+        app_class_registry_consistent:
+          type: boolean
+        app_class_registry_read_only:
+          type: boolean
+        device_class:
+          items:
+            $ref: '#/components/schemas/OpenbaseDeviceClass'
+          type: array
+        device_class_registry_consistent:
+          type: boolean
+        device_class_registry_read_only:
+          type: boolean
+        label:
+          type: string
+        transaction_id:
+          format: int64
+          type: integer
+      type: object
+    OpenbaseColor:
+      properties:
+        hsb_color:
+          $ref: '#/components/schemas/OpenbaseHSBColor'
+        rgb_color:
+          $ref: '#/components/schemas/OpenbaseRGBColor'
+        type:
+          $ref: '#/components/schemas/OpenbaseColor.Type'
+      type: object
+    OpenbaseColor.Type:
+      enum:
+      - HSB
+      - RGB
+      type: string
+    OpenbaseColorState:
+      properties:
+        color:
+          $ref: '#/components/schemas/OpenbaseColor'
+        responsible_action:
+          $ref: '#/components/schemas/OpenbaseActionDescription'
+        timestamp:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+      type: object
+    OpenbaseColorableLightData:
+      properties:
+        action:
+          items:
+            $ref: '#/components/schemas/OpenbaseActionDescription'
+          type: array
+        alias:
+          items:
+            type: string
+          type: array
+        brightness_state:
+          $ref: '#/components/schemas/OpenbaseBrightnessState'
+        brightness_state_last:
+          $ref: '#/components/schemas/OpenbaseBrightnessState'
+        brightness_state_requested:
+          $ref: '#/components/schemas/OpenbaseBrightnessState'
+        color_state:
+          $ref: '#/components/schemas/OpenbaseColorState'
+        color_state_last:
+          $ref: '#/components/schemas/OpenbaseColorState'
+        color_state_requested:
+          $ref: '#/components/schemas/OpenbaseColorState'
+        id:
+          type: string
+        power_state:
+          $ref: '#/components/schemas/OpenbasePowerState'
+        power_state_last:
+          $ref: '#/components/schemas/OpenbasePowerState'
+        power_state_requested:
+          $ref: '#/components/schemas/OpenbasePowerState'
+        transaction_id:
+          format: int64
+          type: integer
+      type: object
+    OpenbaseConnectionConfig:
+      properties:
+        connection_type:
+          $ref: '#/components/schemas/OpenbaseConnectionConfig.ConnectionType'
+        tile_id:
+          items:
+            type: string
+          type: array
+        unit_id:
+          items:
+            type: string
+          type: array
+      type: object
+    OpenbaseConnectionConfig.ConnectionType:
+      enum:
+      - DOOR
+      - WINDOW
+      - PASSAGE
+      type: string
+    OpenbaseConnectionData:
+      properties:
+        action:
+          items:
+            $ref: '#/components/schemas/OpenbaseActionDescription'
+          type: array
+        alias:
+          items:
+            type: string
+          type: array
+        door_state:
+          $ref: '#/components/schemas/OpenbaseDoorState'
+        door_state_last:
+          $ref: '#/components/schemas/OpenbaseDoorState'
+        id:
+          type: string
+        passage_state:
+          $ref: '#/components/schemas/OpenbasePassageState'
+        passage_state_last:
+          $ref: '#/components/schemas/OpenbasePassageState'
+        transaction_id:
+          format: int64
+          type: integer
+        window_state:
+          $ref: '#/components/schemas/OpenbaseWindowState'
+        window_state_last:
+          $ref: '#/components/schemas/OpenbaseWindowState'
+      type: object
+    OpenbaseConnectionState:
+      properties:
+        last_value_occurrence:
+          items:
+            $ref: '#/components/schemas/OpenbaseConnectionState.MapFieldEntry'
+          type: array
+        responsible_action:
+          $ref: '#/components/schemas/OpenbaseActionDescription'
+        timestamp:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+        value:
+          $ref: '#/components/schemas/OpenbaseConnectionState.State'
+      type: object
+    OpenbaseConnectionState.MapFieldEntry:
+      properties:
+        key:
+          $ref: '#/components/schemas/OpenbaseConnectionState.State'
+        value:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+      type: object
+    OpenbaseConnectionState.State:
+      enum:
+      - CONNECTING
+      - CONNECTED
+      - DISCONNECTED
+      - RECONNECTING
+      - REINITIALIZING
+      type: string
+    OpenbaseContactState:
+      properties:
+        last_value_occurrence:
+          items:
+            $ref: '#/components/schemas/OpenbaseContactState.MapFieldEntry'
+          type: array
+        responsible_action:
+          $ref: '#/components/schemas/OpenbaseActionDescription'
+        timestamp:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+        value:
+          $ref: '#/components/schemas/OpenbaseContactState.State'
+      type: object
+    OpenbaseContactState.MapFieldEntry:
+      properties:
+        key:
+          $ref: '#/components/schemas/OpenbaseContactState.State'
+        value:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+      type: object
+    OpenbaseContactState.State:
+      enum:
+      - CLOSED
+      - OPEN
+      type: string
+    OpenbaseDeviceClass:
+      properties:
+        binding_config:
+          $ref: '#/components/schemas/OpenbaseBindingConfig'
+        company:
+          type: string
+        description:
+          $ref: '#/components/schemas/OpenbaseMultiLanguageText'
+        id:
+          type: string
+        label:
+          $ref: '#/components/schemas/OpenbaseLabel'
+        meta_config:
+          $ref: '#/components/schemas/OpenbaseMetaConfig'
+        product_number:
+          type: string
+        shape:
+          $ref: '#/components/schemas/OpenbaseShape'
+        unit_template_config:
+          items:
+            $ref: '#/components/schemas/OpenbaseUnitTemplateConfig'
+          type: array
+      type: object
+    OpenbaseDeviceConfig:
+      properties:
+        device_class_id:
+          type: string
+        inventory_state:
+          $ref: '#/components/schemas/OpenbaseInventoryState'
+        serial_number:
+          type: string
+        unit_id:
+          items:
+            type: string
+          type: array
+      type: object
+    OpenbaseDeviceData:
+      properties:
+        action:
+          items:
+            $ref: '#/components/schemas/OpenbaseActionDescription'
+          type: array
+        alias:
+          items:
+            type: string
+          type: array
+        id:
+          type: string
+        transaction_id:
+          format: int64
+          type: integer
+        unit_audio_source_data:
+          items:
+            $ref: '#/components/schemas/OpenbaseAudioSourceData'
+          type: array
+        unit_battery_data:
+          items:
+            $ref: '#/components/schemas/OpenbaseBatteryData'
+          type: array
+        unit_button_data:
+          items:
+            $ref: '#/components/schemas/OpenbaseButtonData'
+          type: array
+        unit_colorable_light_data:
+          items:
+            $ref: '#/components/schemas/OpenbaseColorableLightData'
+          type: array
+        unit_dimmable_light_data:
+          items:
+            $ref: '#/components/schemas/OpenbaseDimmableLightData'
+          type: array
+        unit_dimmer_data:
+          items:
+            $ref: '#/components/schemas/OpenbaseDimmerData'
+          type: array
+        unit_display_data:
+          items:
+            $ref: '#/components/schemas/OpenbaseDisplayData'
+          type: array
+        unit_handle_data:
+          items:
+            $ref: '#/components/schemas/OpenbaseHandleData'
+          type: array
+        unit_light_data:
+          items:
+            $ref: '#/components/schemas/OpenbaseLightData'
+          type: array
+        unit_light_sensor_data:
+          items:
+            $ref: '#/components/schemas/OpenbaseLightSensorData'
+          type: array
+        unit_monitor_data:
+          items:
+            $ref: '#/components/schemas/OpenbaseMonitorData'
+          type: array
+        unit_motion_detector_data:
+          items:
+            $ref: '#/components/schemas/OpenbaseMotionDetectorData'
+          type: array
+        unit_power_consumption_sensor_data:
+          items:
+            $ref: '#/components/schemas/OpenbasePowerConsumptionSensorData'
+          type: array
+        unit_power_switch_data:
+          items:
+            $ref: '#/components/schemas/OpenbasePowerSwitchData'
+          type: array
+        unit_reed_contact_data:
+          items:
+            $ref: '#/components/schemas/OpenbaseReedContactData'
+          type: array
+        unit_rfid_data:
+          items:
+            $ref: '#/components/schemas/OpenbaseRFIDData'
+          type: array
+        unit_roller_shutter_data:
+          items:
+            $ref: '#/components/schemas/OpenbaseRollerShutterData'
+          type: array
+        unit_smoke_detector_data:
+          items:
+            $ref: '#/components/schemas/OpenbaseSmokeDetectorData'
+          type: array
+        unit_switch_data:
+          items:
+            $ref: '#/components/schemas/OpenbaseSwitchData'
+          type: array
+        unit_tamper_detector_data:
+          items:
+            $ref: '#/components/schemas/OpenbaseTamperDetectorData'
+          type: array
+        unit_television_data:
+          items:
+            $ref: '#/components/schemas/OpenbaseTelevisionData'
+          type: array
+        unit_temperature_controller_data:
+          items:
+            $ref: '#/components/schemas/OpenbaseTemperatureControllerData'
+          type: array
+        unit_temperature_sensor_data:
+          items:
+            $ref: '#/components/schemas/OpenbaseTemperatureSensorData'
+          type: array
+        unit_video_depth_source_data:
+          items:
+            $ref: '#/components/schemas/OpenbaseVideoDepthSourceData'
+          type: array
+        unit_video_rgb_source_data:
+          items:
+            $ref: '#/components/schemas/OpenbaseVideoRgbSourceData'
+          type: array
+      type: object
+    OpenbaseDimmableLightData:
+      properties:
+        action:
+          items:
+            $ref: '#/components/schemas/OpenbaseActionDescription'
+          type: array
+        alias:
+          items:
+            type: string
+          type: array
+        brightness_state:
+          $ref: '#/components/schemas/OpenbaseBrightnessState'
+        brightness_state_last:
+          $ref: '#/components/schemas/OpenbaseBrightnessState'
+        brightness_state_requested:
+          $ref: '#/components/schemas/OpenbaseBrightnessState'
+        id:
+          type: string
+        power_state:
+          $ref: '#/components/schemas/OpenbasePowerState'
+        power_state_last:
+          $ref: '#/components/schemas/OpenbasePowerState'
+        power_state_requested:
+          $ref: '#/components/schemas/OpenbasePowerState'
+        transaction_id:
+          format: int64
+          type: integer
+      type: object
+    OpenbaseDimmerData:
+      properties:
+        action:
+          items:
+            $ref: '#/components/schemas/OpenbaseActionDescription'
+          type: array
+        alias:
+          items:
+            type: string
+          type: array
+        brightness_state:
+          $ref: '#/components/schemas/OpenbaseBrightnessState'
+        brightness_state_last:
+          $ref: '#/components/schemas/OpenbaseBrightnessState'
+        brightness_state_requested:
+          $ref: '#/components/schemas/OpenbaseBrightnessState'
+        id:
+          type: string
+        power_state:
+          $ref: '#/components/schemas/OpenbasePowerState'
+        power_state_last:
+          $ref: '#/components/schemas/OpenbasePowerState'
+        power_state_requested:
+          $ref: '#/components/schemas/OpenbasePowerState'
+        transaction_id:
+          format: int64
+          type: integer
+      type: object
+    OpenbaseDisplayData:
+      properties:
+        action:
+          items:
+            $ref: '#/components/schemas/OpenbaseActionDescription'
+          type: array
+        alias:
+          items:
+            type: string
+          type: array
+        id:
+          type: string
+        transaction_id:
+          format: int64
+          type: integer
+      type: object
+    OpenbaseDoorState:
+      properties:
+        last_value_occurrence:
+          items:
+            $ref: '#/components/schemas/OpenbaseDoorState.MapFieldEntry'
+          type: array
+        responsible_action:
+          $ref: '#/components/schemas/OpenbaseActionDescription'
+        timestamp:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+        value:
+          $ref: '#/components/schemas/OpenbaseDoorState.State'
+      type: object
+    OpenbaseDoorState.MapFieldEntry:
+      properties:
+        key:
+          $ref: '#/components/schemas/OpenbaseDoorState.State'
+        value:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+      type: object
+    OpenbaseDoorState.State:
+      enum:
+      - CLOSED
+      - IN_BETWEEN
+      - OPEN
+      type: string
+    OpenbaseEmphasisState:
+      properties:
+        comfort:
+          format: double
+          type: number
+        economy:
+          format: double
+          type: number
+        responsible_action:
+          $ref: '#/components/schemas/OpenbaseActionDescription'
+        security:
+          format: double
+          type: number
+        timestamp:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+      type: object
+    OpenbaseEnablingState:
+      properties:
+        last_value_occurrence:
+          items:
+            $ref: '#/components/schemas/OpenbaseEnablingState.MapFieldEntry'
+          type: array
+        responsible_action:
+          $ref: '#/components/schemas/OpenbaseActionDescription'
+        timestamp:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+        value:
+          $ref: '#/components/schemas/OpenbaseEnablingState.State'
+      type: object
+    OpenbaseEnablingState.MapFieldEntry:
+      properties:
+        key:
+          $ref: '#/components/schemas/OpenbaseEnablingState.State'
+        value:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+      type: object
+    OpenbaseEnablingState.State:
+      enum:
+      - DISABLED
+      - ENABLED
+      type: string
+    OpenbaseEntry:
+      properties:
+        key:
+          type: string
+        value:
+          type: string
+      type: object
+    OpenbaseFloorCeilingEdgeIndices:
+      properties:
+        ceiling_index:
+          format: int64
+          type: integer
+        floor_index:
+          format: int64
+          type: integer
+      type: object
+    OpenbaseFloorModuleState:
+      properties:
+        position_col:
+          format: int32
+          type: integer
+        position_row:
+          format: int32
+          type: integer
+        segment:
+          items:
+            $ref: '#/components/schemas/OpenbaseFloorModuleState.FloorSegmentState'
+          type: array
+      type: object
+    OpenbaseFloorModuleState.FloorSegmentState:
+      properties:
+        activation_segment:
+          type: boolean
+        capacity_segment:
+          format: int32
+          type: integer
+      type: object
+    OpenbaseFloorState:
+      properties:
+        floormodulestate:
+          items:
+            $ref: '#/components/schemas/OpenbaseFloorModuleState'
+          type: array
+        label:
+          type: string
+      type: object
+    OpenbaseFourierDescriptor:
+      properties:
+        a:
+          items:
+            format: double
+            type: number
+          type: array
+        b:
+          items:
+            format: double
+            type: number
+          type: array
+        c:
+          items:
+            format: double
+            type: number
+          type: array
+        d:
+          items:
+            format: double
+            type: number
+          type: array
+        time:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+      type: object
+    OpenbaseFrameTransform:
+      properties:
+        frame_child:
+          type: string
+        frame_parent:
+          type: string
+        time:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+        transform:
+          $ref: '#/components/schemas/OpenbasePose'
+      type: object
+    OpenbaseFrameTransformCollection:
+      properties:
+        transforms:
+          items:
+            $ref: '#/components/schemas/OpenbaseFrameTransform'
+          type: array
+      type: object
+    OpenbaseGlobalPositionState:
+      properties:
+        elevation:
+          format: double
+          type: number
+        latitude:
+          format: double
+          type: number
+        longitude:
+          format: double
+          type: number
+        responsible_action:
+          $ref: '#/components/schemas/OpenbaseActionDescription'
+        timestamp:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+      type: object
+    OpenbaseHSB:
+      properties:
+        brightness:
+          format: double
+          type: number
+        hue:
+          format: double
+          type: number
+        saturation:
+          format: double
+          type: number
+      type: object
+    OpenbaseHSBColor:
+      properties:
+        brightness:
+          format: double
+          type: number
+        hue:
+          format: double
+          type: number
+        saturation:
+          format: double
+          type: number
+      type: object
+    OpenbaseHandleData:
+      properties:
+        action:
+          items:
+            $ref: '#/components/schemas/OpenbaseActionDescription'
+          type: array
+        alias:
+          items:
+            type: string
+          type: array
+        handle_state:
+          $ref: '#/components/schemas/OpenbaseHandleState'
+        handle_state_last:
+          $ref: '#/components/schemas/OpenbaseHandleState'
+        handle_state_requested:
+          $ref: '#/components/schemas/OpenbaseHandleState'
+        id:
+          type: string
+        transaction_id:
+          format: int64
+          type: integer
+      type: object
+    OpenbaseHandleState:
+      properties:
+        position:
+          format: int32
+          type: integer
+        responsible_action:
+          $ref: '#/components/schemas/OpenbaseActionDescription'
+        timestamp:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+      type: object
+    OpenbaseIlluminanceState:
+      properties:
+        illuminance:
+          format: double
+          type: number
+        illuminance_data_unit:
+          $ref: '#/components/schemas/OpenbaseIlluminanceState.DataUnit'
+        responsible_action:
+          $ref: '#/components/schemas/OpenbaseActionDescription'
+        timestamp:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+      type: object
+    OpenbaseIlluminanceState.DataUnit:
+      enum:
+      - LUX
+      type: string
+    OpenbaseIncreaseDecreaseHolder:
+      properties:
+        state:
+          $ref: '#/components/schemas/OpenbaseIncreaseDecreaseHolder.IncreaseDecrease'
+      type: object
+    OpenbaseIncreaseDecreaseHolder.IncreaseDecrease:
+      enum:
+      - DECREASE
+      - INCREASE
+      type: string
+    OpenbaseInterval:
+      properties:
+        begin:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+        end:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+      type: object
+    OpenbaseInventoryState:
+      properties:
+        borrower_id:
+          type: string
+        last_value_occurrence:
+          items:
+            $ref: '#/components/schemas/OpenbaseInventoryState.MapFieldEntry'
+          type: array
+        location_id:
+          type: string
+        timestamp:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+        value:
+          $ref: '#/components/schemas/OpenbaseInventoryState.State'
+      type: object
+    OpenbaseInventoryState.MapFieldEntry:
+      properties:
+        key:
+          $ref: '#/components/schemas/OpenbaseInventoryState.State'
+        value:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+      type: object
+    OpenbaseInventoryState.State:
+      enum:
+      - ORDERED
+      - INSTALLED
+      - IN_STOCK
+      - BORROWED
+      - LOST
+      type: string
+    OpenbaseKinectPostureJoint:
+      properties:
+        joint:
+          $ref: '#/components/schemas/OpenbaseKinectPostureJoint.Joint'
+      type: object
+    OpenbaseKinectPostureJoint.Joint:
+      enum:
+      - SPINE_BASE
+      - SPINE_MID
+      - NECK
+      - HEAD
+      - SHOULDER_LEFT
+      - ELBOW_LEFT
+      - WRIST_LEFT
+      - HAND_LEFT
+      - SHOULDER_RIGHT
+      - ELBOW_RIGHT
+      - WRIST_RIGHT
+      - HAND_RIGHT
+      - HIP_LEFT
+      - KNEE_LEFT
+      - ANKLE_LEFT
+      - FOOT_LEFT
+      - HIP_RIGHT
+      - KNEE_RIGHT
+      - ANKLE_RIGHT
+      - FOOT_RIGHT
+      - SPINE_SHOULDER
+      - HAND_TIP_LEFT
+      - THUMB_LEFT
+      - HAND_TIP_RIGHT
+      - THUMB_RIGHT
+      type: string
+    OpenbaseKinectPostureJointPair:
+      properties:
+        first:
+          $ref: '#/components/schemas/OpenbaseKinectPostureJoint'
+        second:
+          $ref: '#/components/schemas/OpenbaseKinectPostureJoint'
+      type: object
+    OpenbaseLabel:
+      properties:
+        entry:
+          items:
+            $ref: '#/components/schemas/OpenbaseLabel.MapFieldEntry'
+          type: array
+      type: object
+    OpenbaseLabel.MapFieldEntry:
+      properties:
+        key:
+          type: string
+        value:
+          items:
+            type: string
+          type: array
+      type: object
+    OpenbaseLauncherData:
+      properties:
+        id:
+          type: string
+        label:
+          $ref: '#/components/schemas/OpenbaseLabel'
+        launch_time:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+        launcher_state:
+          $ref: '#/components/schemas/OpenbaseLauncherData.LauncherState'
+        verified:
+          type: boolean
+      type: object
+    OpenbaseLauncherData.LauncherState:
+      enum:
+      - INITALIZING
+      - LAUNCHING
+      - RUNNING
+      - STOPPING
+      - STOPPED
+      - ERROR
+      type: string
+    OpenbaseLightData:
+      properties:
+        action:
+          items:
+            $ref: '#/components/schemas/OpenbaseActionDescription'
+          type: array
+        alias:
+          items:
+            type: string
+          type: array
+        id:
+          type: string
+        power_state:
+          $ref: '#/components/schemas/OpenbasePowerState'
+        power_state_last:
+          $ref: '#/components/schemas/OpenbasePowerState'
+        power_state_requested:
+          $ref: '#/components/schemas/OpenbasePowerState'
+        transaction_id:
+          format: int64
+          type: integer
+      type: object
+    OpenbaseLightSensorData:
+      properties:
+        action:
+          items:
+            $ref: '#/components/schemas/OpenbaseActionDescription'
+          type: array
+        alias:
+          items:
+            type: string
+          type: array
+        id:
+          type: string
+        illuminance_state:
+          $ref: '#/components/schemas/OpenbaseIlluminanceState'
+        illuminance_state_last:
+          $ref: '#/components/schemas/OpenbaseIlluminanceState'
+        illuminance_state_requested:
+          $ref: '#/components/schemas/OpenbaseIlluminanceState'
+        transaction_id:
+          format: int64
+          type: integer
+      type: object
+    OpenbaseLocalPositionState:
+      properties:
+        location_id:
+          items:
+            type: string
+          type: array
+        pose:
+          $ref: '#/components/schemas/OpenbasePose'
+        responsible_action:
+          $ref: '#/components/schemas/OpenbaseActionDescription'
+        timestamp:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+      type: object
+    OpenbaseLocationConfig:
+      properties:
+        child_id:
+          items:
+            type: string
+          type: array
+        global_position:
+          $ref: '#/components/schemas/OpenbaseGlobalPositionState'
+        location_type:
+          $ref: '#/components/schemas/OpenbaseLocationConfig.LocationType'
+        root:
+          type: boolean
+        tile_config:
+          $ref: '#/components/schemas/OpenbaseTileConfig'
+        unit_id:
+          items:
+            type: string
+          type: array
+      type: object
+    OpenbaseLocationConfig.LocationType:
+      enum:
+      - ZONE
+      - REGION
+      - TILE
+      type: string
+    OpenbaseLocationData:
+      properties:
+        action:
+          items:
+            $ref: '#/components/schemas/OpenbaseActionDescription'
+          type: array
+        activity_state:
+          items:
+            $ref: '#/components/schemas/OpenbaseActivityState'
+          type: array
+        activity_state_last:
+          items:
+            $ref: '#/components/schemas/OpenbaseActivityState'
+          type: array
+        activity_state_requested:
+          items:
+            $ref: '#/components/schemas/OpenbaseActivityState'
+          type: array
+        alias:
+          items:
+            type: string
+          type: array
+        blind_state:
+          $ref: '#/components/schemas/OpenbaseBlindState'
+        blind_state_last:
+          $ref: '#/components/schemas/OpenbaseBlindState'
+        blind_state_requested:
+          $ref: '#/components/schemas/OpenbaseBlindState'
+        brightness_state:
+          $ref: '#/components/schemas/OpenbaseBrightnessState'
+        brightness_state_last:
+          $ref: '#/components/schemas/OpenbaseBrightnessState'
+        brightness_state_requested:
+          $ref: '#/components/schemas/OpenbaseBrightnessState'
+        color_state:
+          $ref: '#/components/schemas/OpenbaseColorState'
+        color_state_last:
+          $ref: '#/components/schemas/OpenbaseColorState'
+        color_state_requested:
+          $ref: '#/components/schemas/OpenbaseColorState'
+        emphasis_state:
+          $ref: '#/components/schemas/OpenbaseEmphasisState'
+        emphasis_state_last:
+          $ref: '#/components/schemas/OpenbaseEmphasisState'
+        emphasis_state_requested:
+          $ref: '#/components/schemas/OpenbaseEmphasisState'
+        id:
+          type: string
+        illuminance_state:
+          $ref: '#/components/schemas/OpenbaseIlluminanceState'
+        illuminance_state_last:
+          $ref: '#/components/schemas/OpenbaseIlluminanceState'
+        motion_state:
+          $ref: '#/components/schemas/OpenbaseMotionState'
+        motion_state_last:
+          $ref: '#/components/schemas/OpenbaseMotionState'
+        power_consumption_state:
+          $ref: '#/components/schemas/OpenbasePowerConsumptionState'
+        power_consumption_state_last:
+          $ref: '#/components/schemas/OpenbasePowerConsumptionState'
+        power_state:
+          $ref: '#/components/schemas/OpenbasePowerState'
+        power_state_last:
+          $ref: '#/components/schemas/OpenbasePowerState'
+        power_state_requested:
+          $ref: '#/components/schemas/OpenbasePowerState'
+        presence_state:
+          $ref: '#/components/schemas/OpenbasePresenceState'
+        presence_state_last:
+          $ref: '#/components/schemas/OpenbasePresenceState'
+        smoke_alarm_state:
+          $ref: '#/components/schemas/OpenbaseAlarmState'
+        smoke_alarm_state_last:
+          $ref: '#/components/schemas/OpenbaseAlarmState'
+        smoke_state:
+          $ref: '#/components/schemas/OpenbaseSmokeState'
+        smoke_state_last:
+          $ref: '#/components/schemas/OpenbaseSmokeState'
+        standby_state:
+          $ref: '#/components/schemas/OpenbaseStandbyState'
+        standby_state_last:
+          $ref: '#/components/schemas/OpenbaseStandbyState'
+        standby_state_requested:
+          $ref: '#/components/schemas/OpenbaseStandbyState'
+        tamper_state:
+          $ref: '#/components/schemas/OpenbaseTamperState'
+        tamper_state_last:
+          $ref: '#/components/schemas/OpenbaseTamperState'
+        target_temperature_state:
+          $ref: '#/components/schemas/OpenbaseTemperatureState'
+        target_temperature_state_last:
+          $ref: '#/components/schemas/OpenbaseTemperatureState'
+        target_temperature_state_requested:
+          $ref: '#/components/schemas/OpenbaseTemperatureState'
+        temperature_alarm_state:
+          $ref: '#/components/schemas/OpenbaseAlarmState'
+        temperature_alarm_state_last:
+          $ref: '#/components/schemas/OpenbaseAlarmState'
+        temperature_state:
+          $ref: '#/components/schemas/OpenbaseTemperatureState'
+        temperature_state_last:
+          $ref: '#/components/schemas/OpenbaseTemperatureState'
+        temperature_state_requested:
+          $ref: '#/components/schemas/OpenbaseTemperatureState'
+        transaction_id:
+          format: int64
+          type: integer
+      type: object
+    OpenbaseLoginCredentials:
+      properties:
+        admin:
+          type: boolean
+        credentials:
+          type: string
+        id:
+          type: string
+        symmetric:
+          type: boolean
+      type: object
+    OpenbaseLoginCredentialsChange:
+      properties:
+        id:
+          type: string
+        new_credentials:
+          type: string
+        old_credentials:
+          type: string
+        symmetric:
+          type: boolean
+      type: object
+    OpenbaseLoginCredentialsCollection:
+      properties:
+        login_credentials:
+          items:
+            $ref: '#/components/schemas/OpenbaseLoginCredentials'
+          type: array
+      type: object
+    OpenbaseLoginCredentialsEncoded:
+      properties:
+        admin:
+          type: boolean
+        credentials:
+          type: string
+        id:
+          type: string
+        symmetric:
+          type: boolean
+      type: object
+    OpenbaseLoginCredentialsEncodedCollection:
+      properties:
+        login_credentials_encoded:
+          items:
+            $ref: '#/components/schemas/OpenbaseLoginCredentialsEncoded'
+          type: array
+      type: object
+    OpenbaseMetaConfig:
+      properties:
+        entry:
+          items:
+            $ref: '#/components/schemas/OpenbaseEntry'
+          type: array
+      type: object
+    OpenbaseMonitorData:
+      properties:
+        action:
+          items:
+            $ref: '#/components/schemas/OpenbaseActionDescription'
+          type: array
+        alias:
+          items:
+            type: string
+          type: array
+        id:
+          type: string
+        power_state:
+          $ref: '#/components/schemas/OpenbasePowerState'
+        power_state_last:
+          $ref: '#/components/schemas/OpenbasePowerState'
+        power_state_requested:
+          $ref: '#/components/schemas/OpenbasePowerState'
+        standby_state:
+          $ref: '#/components/schemas/OpenbaseStandbyState'
+        standby_state_last:
+          $ref: '#/components/schemas/OpenbaseStandbyState'
+        standby_state_requested:
+          $ref: '#/components/schemas/OpenbaseStandbyState'
+        transaction_id:
+          format: int64
+          type: integer
+      type: object
+    OpenbaseMotionDetectorData:
+      properties:
+        action:
+          items:
+            $ref: '#/components/schemas/OpenbaseActionDescription'
+          type: array
+        alias:
+          items:
+            type: string
+          type: array
+        id:
+          type: string
+        motion_state:
+          $ref: '#/components/schemas/OpenbaseMotionState'
+        motion_state_last:
+          $ref: '#/components/schemas/OpenbaseMotionState'
+        transaction_id:
+          format: int64
+          type: integer
+      type: object
+    OpenbaseMotionState:
+      properties:
+        last_value_occurrence:
+          items:
+            $ref: '#/components/schemas/OpenbaseMotionState.MapFieldEntry'
+          type: array
+        responsible_action:
+          $ref: '#/components/schemas/OpenbaseActionDescription'
+        timestamp:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+        value:
+          $ref: '#/components/schemas/OpenbaseMotionState.State'
+      type: object
+    OpenbaseMotionState.MapFieldEntry:
+      properties:
+        key:
+          $ref: '#/components/schemas/OpenbaseMotionState.State'
+        value:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+      type: object
+    OpenbaseMotionState.State:
+      enum:
+      - NO_MOTION
+      - MOTION
+      type: string
+    OpenbaseMultiLanguageText:
+      properties:
+        entry:
+          items:
+            $ref: '#/components/schemas/OpenbaseMultiLanguageText.MapFieldEntry'
+          type: array
+      type: object
+    OpenbaseMultiLanguageText.MapFieldEntry:
+      properties:
+        key:
+          type: string
+        value:
+          type: string
+      type: object
+    OpenbaseMultiResourceAllocationStrategy:
+      properties:
+        strategy:
+          $ref: '#/components/schemas/OpenbaseMultiResourceAllocationStrategy.Strategy'
+      type: object
+    OpenbaseMultiResourceAllocationStrategy.Strategy:
+      enum:
+      - AT_LEAST_ONE
+      - ALL_OR_NOTHING
+      type: string
+    OpenbaseObjectConfig:
+      properties:
+        inventory_state:
+          $ref: '#/components/schemas/OpenbaseInventoryState'
+      type: object
+    OpenbaseObjectData:
+      properties:
+        action:
+          items:
+            $ref: '#/components/schemas/OpenbaseActionDescription'
+          type: array
+        alias:
+          items:
+            type: string
+          type: array
+        id:
+          type: string
+        transaction_id:
+          format: int64
+          type: integer
+      type: object
+    OpenbaseObjectID:
+      properties:
+        id:
+          type: string
+        type:
+          type: string
+      type: object
+    OpenbaseOnOffHolder:
+      properties:
+        state:
+          $ref: '#/components/schemas/OpenbaseOnOffHolder.OnOff'
+      type: object
+    OpenbaseOnOffHolder.OnOff:
+      enum:
+      - 'OFF'
+      - 'ON'
+      type: string
+    OpenbaseOntologyChange:
+      properties:
+        category:
+          items:
+            $ref: '#/components/schemas/OpenbaseOntologyChange.Category'
+          type: array
+        service_type:
+          items:
+            $ref: '#/components/schemas/OpenbaseServiceTemplate.ServiceType'
+          type: array
+        unit_type:
+          items:
+            $ref: '#/components/schemas/OpenbaseUnitTemplate.UnitType'
+          type: array
+      type: object
+    OpenbaseOntologyChange.Category:
+      enum:
+      - AGGREGATION
+      type: string
+    OpenbaseOpenClosedHolder:
+      properties:
+        state:
+          $ref: '#/components/schemas/OpenbaseOpenClosedHolder.OpenClosed'
+      type: object
+    OpenbaseOpenClosedHolder.OpenClosed:
+      enum:
+      - CLOSED
+      - OPEN
+      type: string
+    OpenbaseOpenhabCommand:
+      properties:
+        binding_type:
+          type: string
+        decimal:
+          format: double
+          type: number
+        hsb:
+          $ref: '#/components/schemas/OpenbaseHSB'
+        increase_decrease:
+          $ref: '#/components/schemas/OpenbaseIncreaseDecreaseHolder'
+        item:
+          type: string
+        item_binding_config:
+          type: string
+        on_off:
+          $ref: '#/components/schemas/OpenbaseOnOffHolder'
+        open_closed:
+          $ref: '#/components/schemas/OpenbaseOpenClosedHolder'
+        percent:
+          $ref: '#/components/schemas/OpenbasePercent'
+        stop_move:
+          $ref: '#/components/schemas/OpenbaseStopMoveHolder'
+        text:
+          type: string
+        timestamp:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+        type:
+          $ref: '#/components/schemas/OpenbaseOpenhabCommand.CommandType'
+        up_down:
+          $ref: '#/components/schemas/OpenbaseUpDownHolder'
+      type: object
+    OpenbaseOpenhabCommand.CommandType:
+      enum:
+      - HSB
+      - DECIMAL
+      - INCREASEDECREASE
+      - ONOFF
+      - OPENCLOSED
+      - PERCENT
+      - STOPMOVE
+      - STRING
+      - UPDOWN
+      type: string
+    OpenbaseOpenhabState:
+      properties: {}
+      type: object
+    OpenbaseOperationMode:
+      properties:
+        timestamp:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+        value:
+          $ref: '#/components/schemas/OpenbaseOperationMode.Mode'
+      type: object
+    OpenbaseOperationMode.Mode:
+      enum:
+      - FORCE_OFF
+      - AUTO
+      - FORCE_ON
+      type: string
+    OpenbasePanTiltAngle:
+      properties:
+        pan:
+          format: float
+          type: number
+        tilt:
+          format: float
+          type: number
+      type: object
+    OpenbasePassageState:
+      properties:
+        responsible_action:
+          $ref: '#/components/schemas/OpenbaseActionDescription'
+        timestamp:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+      type: object
+    OpenbasePercent:
+      properties:
+        value:
+          format: double
+          type: number
+      type: object
+    OpenbasePermission:
+      properties:
+        access:
+          type: boolean
+        read:
+          type: boolean
+        write:
+          type: boolean
+      type: object
+    OpenbasePermissionConfig:
+      properties:
+        group_permission:
+          items:
+            $ref: '#/components/schemas/OpenbasePermissionConfig.MapFieldEntry'
+          type: array
+        other_permission:
+          $ref: '#/components/schemas/OpenbasePermission'
+        owner_id:
+          type: string
+        owner_permission:
+          $ref: '#/components/schemas/OpenbasePermission'
+      type: object
+    OpenbasePermissionConfig.MapFieldEntry:
+      properties:
+        group_id:
+          type: string
+        permission:
+          $ref: '#/components/schemas/OpenbasePermission'
+      type: object
+    OpenbasePlacementConfig:
+      properties:
+        location_id:
+          type: string
+        pose:
+          $ref: '#/components/schemas/OpenbasePose'
+        shape:
+          $ref: '#/components/schemas/OpenbaseShape'
+        transformation_frame_id:
+          type: string
+      type: object
+    OpenbasePointingRay3DFloat:
+      properties:
+        certainty:
+          format: float
+          type: number
+        ray:
+          $ref: '#/components/schemas/OpenbaseRay3DFloat'
+        right_hand_pointing:
+          type: boolean
+        type:
+          $ref: '#/components/schemas/OpenbasePointingRay3DFloat.PointingType'
+      type: object
+    OpenbasePointingRay3DFloat.PointingType:
+      enum:
+      - FOREARM
+      - HAND
+      - HEAD_HAND
+      - HEAD_FINGERTIP
+      - SHOULDER_HAND
+      - OTHER
+      type: string
+    OpenbasePointingRay3DFloatCollection:
+      properties:
+        element:
+          items:
+            $ref: '#/components/schemas/OpenbasePointingRay3DFloat'
+          type: array
+      type: object
+    OpenbasePointingRay3DFloatDistribution:
+      properties:
+        ray:
+          items:
+            $ref: '#/components/schemas/OpenbasePointingRay3DFloat'
+          type: array
+      type: object
+    OpenbasePointingRay3DFloatDistributionCollection:
+      properties:
+        element:
+          items:
+            $ref: '#/components/schemas/OpenbasePointingRay3DFloatDistribution'
+          type: array
+      type: object
+    OpenbasePose:
+      properties:
+        rotation:
+          $ref: '#/components/schemas/OpenbaseRotation'
+        translation:
+          $ref: '#/components/schemas/OpenbaseTranslation'
+      type: object
+    OpenbasePosture3DFloat:
+      properties:
+        name:
+          items:
+            type: string
+          type: array
+        position:
+          items:
+            $ref: '#/components/schemas/OpenbaseTranslation'
+          type: array
+        rotation:
+          items:
+            $ref: '#/components/schemas/OpenbaseRotation'
+          type: array
+      type: object
+    OpenbasePowerConsumptionSensorData:
+      properties:
+        action:
+          items:
+            $ref: '#/components/schemas/OpenbaseActionDescription'
+          type: array
+        alias:
+          items:
+            type: string
+          type: array
+        id:
+          type: string
+        power_consumption_state:
+          $ref: '#/components/schemas/OpenbasePowerConsumptionState'
+        power_consumption_state_last:
+          $ref: '#/components/schemas/OpenbasePowerConsumptionState'
+        transaction_id:
+          format: int64
+          type: integer
+      type: object
+    OpenbasePowerConsumptionState:
+      properties:
+        consumption:
+          format: double
+          type: number
+        current:
+          format: double
+          type: number
+        responsible_action:
+          $ref: '#/components/schemas/OpenbaseActionDescription'
+        timestamp:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+        voltage:
+          format: double
+          type: number
+      type: object
+    OpenbasePowerState:
+      properties:
+        last_value_occurrence:
+          items:
+            $ref: '#/components/schemas/OpenbasePowerState.MapFieldEntry'
+          type: array
+        responsible_action:
+          $ref: '#/components/schemas/OpenbaseActionDescription'
+        timestamp:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+        value:
+          $ref: '#/components/schemas/OpenbasePowerState.State'
+      type: object
+    OpenbasePowerState.MapFieldEntry:
+      properties:
+        key:
+          $ref: '#/components/schemas/OpenbasePowerState.State'
+        value:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+      type: object
+    OpenbasePowerState.State:
+      enum:
+      - 'OFF'
+      - 'ON'
+      type: string
+    OpenbasePowerSwitchData:
+      properties:
+        action:
+          items:
+            $ref: '#/components/schemas/OpenbaseActionDescription'
+          type: array
+        alias:
+          items:
+            type: string
+          type: array
+        id:
+          type: string
+        power_state:
+          $ref: '#/components/schemas/OpenbasePowerState'
+        power_state_last:
+          $ref: '#/components/schemas/OpenbasePowerState'
+        power_state_requested:
+          $ref: '#/components/schemas/OpenbasePowerState'
+        transaction_id:
+          format: int64
+          type: integer
+      type: object
+    OpenbasePresenceState:
+      properties:
+        last_value_occurrence:
+          items:
+            $ref: '#/components/schemas/OpenbasePresenceState.MapFieldEntry'
+          type: array
+        responsible_action:
+          $ref: '#/components/schemas/OpenbaseActionDescription'
+        timestamp:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+        value:
+          $ref: '#/components/schemas/OpenbasePresenceState.State'
+      type: object
+    OpenbasePresenceState.MapFieldEntry:
+      properties:
+        key:
+          $ref: '#/components/schemas/OpenbasePresenceState.State'
+        value:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+      type: object
+    OpenbasePresenceState.State:
+      enum:
+      - ABSENT
+      - PRESENT
+      type: string
+    OpenbaseRFIDData:
+      properties:
+        action:
+          items:
+            $ref: '#/components/schemas/OpenbaseActionDescription'
+          type: array
+        alias:
+          items:
+            type: string
+          type: array
+        id:
+          type: string
+        rfid_state:
+          $ref: '#/components/schemas/OpenbaseRFIDState'
+        rfid_state_last:
+          $ref: '#/components/schemas/OpenbaseRFIDState'
+        transaction_id:
+          format: int64
+          type: integer
+      type: object
+    OpenbaseRFIDState:
+      properties:
+        data:
+          type: string
+        id:
+          type: string
+        responsible_action:
+          $ref: '#/components/schemas/OpenbaseActionDescription'
+        timestamp:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+      type: object
+    OpenbaseRGBColor:
+      properties:
+        blue:
+          format: int32
+          type: integer
+        green:
+          format: int32
+          type: integer
+        red:
+          format: int32
+          type: integer
+      type: object
+    OpenbaseRay3DFloat:
+      properties:
+        direction:
+          $ref: '#/components/schemas/OpenbaseVec3DFloat'
+        origin:
+          $ref: '#/components/schemas/OpenbaseVec3DFloat'
+      type: object
+    OpenbaseReedContactData:
+      properties:
+        action:
+          items:
+            $ref: '#/components/schemas/OpenbaseActionDescription'
+          type: array
+        alias:
+          items:
+            type: string
+          type: array
+        contact_state:
+          $ref: '#/components/schemas/OpenbaseContactState'
+        contact_state_last:
+          $ref: '#/components/schemas/OpenbaseContactState'
+        id:
+          type: string
+        transaction_id:
+          format: int64
+          type: integer
+      type: object
+    OpenbaseRollerShutterData:
+      properties:
+        action:
+          items:
+            $ref: '#/components/schemas/OpenbaseActionDescription'
+          type: array
+        alias:
+          items:
+            type: string
+          type: array
+        blind_state:
+          $ref: '#/components/schemas/OpenbaseBlindState'
+        blind_state_last:
+          $ref: '#/components/schemas/OpenbaseBlindState'
+        blind_state_requested:
+          $ref: '#/components/schemas/OpenbaseBlindState'
+        id:
+          type: string
+        transaction_id:
+          format: int64
+          type: integer
+      type: object
+    OpenbaseRotation:
+      properties:
+        frame_id:
+          type: string
+        qw:
+          format: double
+          type: number
+        qx:
+          format: double
+          type: number
+        qy:
+          format: double
+          type: number
+        qz:
+          format: double
+          type: number
+      type: object
+    OpenbaseSceneConfig:
+      properties:
+        optional_service_state_description:
+          items:
+            $ref: '#/components/schemas/OpenbaseServiceStateDescription'
+          type: array
+        required_service_state_description:
+          items:
+            $ref: '#/components/schemas/OpenbaseServiceStateDescription'
+          type: array
+      type: object
+    OpenbaseSceneData:
+      properties:
+        action:
+          items:
+            $ref: '#/components/schemas/OpenbaseActionDescription'
+          type: array
+        activation_state:
+          $ref: '#/components/schemas/OpenbaseActivationState'
+        activation_state_last:
+          $ref: '#/components/schemas/OpenbaseActivationState'
+        activation_state_requested:
+          $ref: '#/components/schemas/OpenbaseActivationState'
+        alias:
+          items:
+            type: string
+          type: array
+        id:
+          type: string
+        transaction_id:
+          format: int64
+          type: integer
+      type: object
+    OpenbaseScope:
+      properties:
+        component:
+          items:
+            type: string
+          type: array
+      type: object
+    OpenbaseServiceCommunicationType:
+      properties: {}
+      type: object
+    OpenbaseServiceCommunicationType.CommunicationType:
+      enum:
+      - ACTIVATION_STATE
+      - ALARM_STATE
+      - BATTERY_STATE
+      - BLIND_STATE
+      - BRIGHTNESS_STATE
+      - BUTTON_STATE
+      - COLOR_STATE
+      - CONTACT_STATE
+      - DOOR_STATE
+      - HANDLE_STATE
+      - ILLUMINANCE_STATE
+      - MOTION_STATE
+      - PASSAGE_STATE
+      - POWER_CONSUMPTION_STATE
+      - POWER_STATE
+      - PRESENCE_STATE
+      - RFID_STATE
+      - SMOKE_STATE
+      - STANDBY_STATE
+      - SWITCH_STATE
+      - TAMPER_STATE
+      - TEMPERATURE_STATE
+      - ACTIVITY_STATE
+      - ACTIVITY_MULTI_STATE
+      - USER_TRANSIT_STATE
+      - WINDOW_STATE
+      - EMPHASIS_STATE
+      - LOCAL_POSITION_STATE
+      - GLOBAL_POSITION_STATE
+      type: string
+    OpenbaseServiceConfig:
+      properties:
+        binding_config:
+          $ref: '#/components/schemas/OpenbaseBindingConfig'
+        meta_config:
+          $ref: '#/components/schemas/OpenbaseMetaConfig'
+        service_description:
+          $ref: '#/components/schemas/OpenbaseServiceDescription'
+        unit_id:
+          type: string
+      type: object
+    OpenbaseServiceDescription:
+      properties:
+        aggregated:
+          type: boolean
+        meta_config:
+          $ref: '#/components/schemas/OpenbaseMetaConfig'
+        pattern:
+          $ref: '#/components/schemas/OpenbaseServiceTemplate.ServicePattern'
+        service_template_id:
+          type: string
+        service_type:
+          $ref: '#/components/schemas/OpenbaseServiceTemplate.ServiceType'
+      type: object
+    OpenbaseServiceStateDescription:
+      properties:
+        service_state:
+          type: string
+        service_state_class_name:
+          type: string
+        service_type:
+          $ref: '#/components/schemas/OpenbaseServiceTemplate.ServiceType'
+        unit_id:
+          type: string
+        unit_type:
+          $ref: '#/components/schemas/OpenbaseUnitTemplate.UnitType'
+      type: object
+    OpenbaseServiceTemplate:
+      properties:
+        communication_type:
+          $ref: '#/components/schemas/OpenbaseServiceCommunicationType.CommunicationType'
+        id:
+          type: string
+        label:
+          $ref: '#/components/schemas/OpenbaseLabel'
+        meta_config:
+          $ref: '#/components/schemas/OpenbaseMetaConfig'
+        service_type:
+          $ref: '#/components/schemas/OpenbaseServiceTemplate.ServiceType'
+        super_type:
+          items:
+            $ref: '#/components/schemas/OpenbaseServiceTemplate.ServiceType'
+          type: array
+      type: object
+    OpenbaseServiceTemplate.ServicePattern:
+      enum:
+      - PROVIDER
+      - OPERATION
+      - CONSUMER
+      - STREAM
+      type: string
+    OpenbaseServiceTemplate.ServiceType:
+      enum:
+      - ACTIVATION_STATE_SERVICE
+      - BATTERY_STATE_SERVICE
+      - BRIGHTNESS_STATE_SERVICE
+      - BUTTON_STATE_SERVICE
+      - SWITCH_STATE_SERVICE
+      - COLOR_STATE_SERVICE
+      - HANDLE_STATE_SERVICE
+      - MOTION_STATE_SERVICE
+      - POWER_CONSUMPTION_STATE_SERVICE
+      - POWER_STATE_SERVICE
+      - CONTACT_STATE_SERVICE
+      - BLIND_STATE_SERVICE
+      - TAMPER_STATE_SERVICE
+      - TARGET_TEMPERATURE_STATE_SERVICE
+      - TEMPERATURE_STATE_SERVICE
+      - STANDBY_STATE_SERVICE
+      - SMOKE_ALARM_STATE_SERVICE
+      - TEMPERATURE_ALARM_STATE_SERVICE
+      - SMOKE_STATE_SERVICE
+      - WATER_ALARM_STATE_SERVICE
+      - FIRE_ALARM_STATE_SERVICE
+      - TEMPEST_ALARM_STATE_SERVICE
+      - EARTHQUAKE_ALARM_STATE_SERVICE
+      - INTRUSION_ALARM_STATE_SERVICE
+      - MEDICAL_EMERGENCY_ALARM_STATE_SERVICE
+      - DOOR_STATE_SERVICE
+      - WINDOW_STATE_SERVICE
+      - PASSAGE_STATE_SERVICE
+      - RFID_STATE_SERVICE
+      - PRESENCE_STATE_SERVICE
+      - ILLUMINANCE_STATE_SERVICE
+      - USER_TRANSIT_STATE_SERVICE
+      - ACTIVITY_MULTI_STATE_SERVICE
+      - EMPHASIS_STATE_SERVICE
+      - LOCAL_POSITION_STATE_SERVICE
+      - GLOBAL_POSITION_STATE_SERVICE
+      type: string
+    OpenbaseServiceTemplateConfig:
+      properties:
+        meta_config:
+          $ref: '#/components/schemas/OpenbaseMetaConfig'
+        service_type:
+          $ref: '#/components/schemas/OpenbaseServiceTemplate.ServiceType'
+      type: object
+    OpenbaseServiceTempusType:
+      properties: {}
+      type: object
+    OpenbaseServiceTempusType.ServiceTempus:
+      enum:
+      - CURRENT
+      - LAST
+      - REQUESTED
+      type: string
+    OpenbaseShape:
+      properties:
+        bounding_box:
+          $ref: '#/components/schemas/OpenbaseAxisAlignedBoundingBox3DFloat'
+        ceiling:
+          items:
+            $ref: '#/components/schemas/OpenbaseVec3DDouble'
+          type: array
+        floor:
+          items:
+            $ref: '#/components/schemas/OpenbaseVec3DDouble'
+          type: array
+        floor_ceiling_edge:
+          items:
+            $ref: '#/components/schemas/OpenbaseFloorCeilingEdgeIndices'
+          type: array
+      type: object
+    OpenbaseSmokeDetectorData:
+      properties:
+        action:
+          items:
+            $ref: '#/components/schemas/OpenbaseActionDescription'
+          type: array
+        alias:
+          items:
+            type: string
+          type: array
+        id:
+          type: string
+        smoke_alarm_state:
+          $ref: '#/components/schemas/OpenbaseAlarmState'
+        smoke_alarm_state_last:
+          $ref: '#/components/schemas/OpenbaseAlarmState'
+        smoke_state:
+          $ref: '#/components/schemas/OpenbaseSmokeState'
+        smoke_state_last:
+          $ref: '#/components/schemas/OpenbaseSmokeState'
+        transaction_id:
+          format: int64
+          type: integer
+      type: object
+    OpenbaseSmokeState:
+      properties:
+        last_value_occurrence:
+          items:
+            $ref: '#/components/schemas/OpenbaseSmokeState.MapFieldEntry'
+          type: array
+        responsible_action:
+          $ref: '#/components/schemas/OpenbaseActionDescription'
+        smoke_level:
+          format: double
+          type: number
+        timestamp:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+        value:
+          $ref: '#/components/schemas/OpenbaseSmokeState.State'
+      type: object
+    OpenbaseSmokeState.MapFieldEntry:
+      properties:
+        key:
+          $ref: '#/components/schemas/OpenbaseSmokeState.State'
+        value:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+      type: object
+    OpenbaseSmokeState.State:
+      enum:
+      - NO_SMOKE
+      - SOME_SMOKE
+      - SMOKE
+      type: string
+    OpenbaseSnapshot:
+      properties:
+        record_time:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+        service_state_description:
+          items:
+            $ref: '#/components/schemas/OpenbaseServiceStateDescription'
+          type: array
+      type: object
+    OpenbaseStandbyState:
+      properties:
+        last_value_occurrence:
+          items:
+            $ref: '#/components/schemas/OpenbaseStandbyState.MapFieldEntry'
+          type: array
+        responsible_action:
+          $ref: '#/components/schemas/OpenbaseActionDescription'
+        timestamp:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+        value:
+          $ref: '#/components/schemas/OpenbaseStandbyState.State'
+      type: object
+    OpenbaseStandbyState.MapFieldEntry:
+      properties:
+        key:
+          $ref: '#/components/schemas/OpenbaseStandbyState.State'
+        value:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+      type: object
+    OpenbaseStandbyState.State:
+      enum:
+      - RUNNING
+      - STANDBY
+      type: string
+    OpenbaseState:
+      properties:
+        aspect:
+          items:
+            $ref: '#/components/schemas/OpenbaseState.Aspect'
+          type: array
+        info:
+          $ref: '#/components/schemas/OpenbaseTrackingInfo'
+      type: object
+    OpenbaseState.Aspect:
+      enum:
+      - ASPECT_POSITION_2D
+      - ASPECT_POSITION_3D
+      - ASPECT_AXIS_ALIGNED_BOUNDING_BOX_2D
+      - ASPECT_AXIS_ALIGNED_BOUNDING_BOX_3D
+      - ASPECT_BOUNDING_BOX_2D
+      - ASPECT_BOUNDING_BOX_3D
+      - ASPECT_CONTOUR
+      - ASPECT_POSTURE_2D
+      - ASPECT_POSTURE_3D
+      type: string
+    OpenbaseStates:
+      properties:
+        state:
+          items:
+            $ref: '#/components/schemas/OpenbaseState'
+          type: array
+      type: object
+    OpenbaseStopMoveHolder:
+      properties:
+        state:
+          $ref: '#/components/schemas/OpenbaseStopMoveHolder.StopMove'
+      type: object
+    OpenbaseStopMoveHolder.StopMove:
+      enum:
+      - STOP
+      - MOVE
+      type: string
+    OpenbaseSwitchData:
+      properties:
+        action:
+          items:
+            $ref: '#/components/schemas/OpenbaseActionDescription'
+          type: array
+        alias:
+          items:
+            type: string
+          type: array
+        id:
+          type: string
+        switch_state:
+          $ref: '#/components/schemas/OpenbaseSwitchState'
+        switch_state_last:
+          $ref: '#/components/schemas/OpenbaseSwitchState'
+        transaction_id:
+          format: int64
+          type: integer
+      type: object
+    OpenbaseSwitchState:
+      properties:
+        position:
+          format: int32
+          type: integer
+        responsible_action:
+          $ref: '#/components/schemas/OpenbaseActionDescription'
+        timestamp:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+      type: object
+    OpenbaseTamperDetectorData:
+      properties:
+        action:
+          items:
+            $ref: '#/components/schemas/OpenbaseActionDescription'
+          type: array
+        alias:
+          items:
+            type: string
+          type: array
+        id:
+          type: string
+        tamper_state:
+          $ref: '#/components/schemas/OpenbaseTamperState'
+        tamper_state_last:
+          $ref: '#/components/schemas/OpenbaseTamperState'
+        transaction_id:
+          format: int64
+          type: integer
+      type: object
+    OpenbaseTamperState:
+      properties:
+        last_value_occurrence:
+          items:
+            $ref: '#/components/schemas/OpenbaseTamperState.MapFieldEntry'
+          type: array
+        responsible_action:
+          $ref: '#/components/schemas/OpenbaseActionDescription'
+        timestamp:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+        value:
+          $ref: '#/components/schemas/OpenbaseTamperState.State'
+      type: object
+    OpenbaseTamperState.MapFieldEntry:
+      properties:
+        key:
+          $ref: '#/components/schemas/OpenbaseTamperState.State'
+        value:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+      type: object
+    OpenbaseTamperState.State:
+      enum:
+      - NO_TAMPER
+      - TAMPER
+      type: string
+    OpenbaseTelevisionData:
+      properties:
+        action:
+          items:
+            $ref: '#/components/schemas/OpenbaseActionDescription'
+          type: array
+        alias:
+          items:
+            type: string
+          type: array
+        id:
+          type: string
+        power_state:
+          $ref: '#/components/schemas/OpenbasePowerState'
+        power_state_last:
+          $ref: '#/components/schemas/OpenbasePowerState'
+        power_state_requested:
+          $ref: '#/components/schemas/OpenbasePowerState'
+        standby_state:
+          $ref: '#/components/schemas/OpenbaseStandbyState'
+        standby_state_last:
+          $ref: '#/components/schemas/OpenbaseStandbyState'
+        standby_state_requested:
+          $ref: '#/components/schemas/OpenbaseStandbyState'
+        transaction_id:
+          format: int64
+          type: integer
+      type: object
+    OpenbaseTemperatureControllerData:
+      properties:
+        action:
+          items:
+            $ref: '#/components/schemas/OpenbaseActionDescription'
+          type: array
+        alias:
+          items:
+            type: string
+          type: array
+        id:
+          type: string
+        target_temperature_state:
+          $ref: '#/components/schemas/OpenbaseTemperatureState'
+        target_temperature_state_last:
+          $ref: '#/components/schemas/OpenbaseTemperatureState'
+        target_temperature_state_requested:
+          $ref: '#/components/schemas/OpenbaseTemperatureState'
+        temperature_alarm_state:
+          $ref: '#/components/schemas/OpenbaseAlarmState'
+        temperature_alarm_state_last:
+          $ref: '#/components/schemas/OpenbaseAlarmState'
+        temperature_alarm_state_requested:
+          $ref: '#/components/schemas/OpenbaseAlarmState'
+        temperature_state:
+          $ref: '#/components/schemas/OpenbaseTemperatureState'
+        temperature_state_last:
+          $ref: '#/components/schemas/OpenbaseTemperatureState'
+        temperature_state_requested:
+          $ref: '#/components/schemas/OpenbaseTemperatureState'
+        transaction_id:
+          format: int64
+          type: integer
+      type: object
+    OpenbaseTemperatureSensorData:
+      properties:
+        action:
+          items:
+            $ref: '#/components/schemas/OpenbaseActionDescription'
+          type: array
+        alias:
+          items:
+            type: string
+          type: array
+        id:
+          type: string
+        temperature_alarm_state:
+          $ref: '#/components/schemas/OpenbaseAlarmState'
+        temperature_alarm_state_last:
+          $ref: '#/components/schemas/OpenbaseAlarmState'
+        temperature_state:
+          $ref: '#/components/schemas/OpenbaseTemperatureState'
+        temperature_state_last:
+          $ref: '#/components/schemas/OpenbaseTemperatureState'
+        transaction_id:
+          format: int64
+          type: integer
+      type: object
+    OpenbaseTemperatureState:
+      properties:
+        responsible_action:
+          $ref: '#/components/schemas/OpenbaseActionDescription'
+        temperature:
+          format: double
+          type: number
+        temperature_data_unit:
+          $ref: '#/components/schemas/OpenbaseTemperatureState.DataUnit'
+        timestamp:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+      type: object
+    OpenbaseTemperatureState.DataUnit:
+      enum:
+      - CELSIUS
+      - KELVIN
+      - FAHRENHEIT
+      type: string
+    OpenbaseTemplateRegistryData:
+      properties:
+        activity_template:
+          items:
+            $ref: '#/components/schemas/OpenbaseActivityTemplate'
+          type: array
+        activity_template_registry_consistent:
+          type: boolean
+        activity_template_registry_read_only:
+          type: boolean
+        label:
+          type: string
+        service_template:
+          items:
+            $ref: '#/components/schemas/OpenbaseServiceTemplate'
+          type: array
+        service_template_registry_consistent:
+          type: boolean
+        service_template_registry_read_only:
+          type: boolean
+        transaction_id:
+          format: int64
+          type: integer
+        unit_template:
+          items:
+            $ref: '#/components/schemas/OpenbaseUnitTemplate'
+          type: array
+        unit_template_registry_consistent:
+          type: boolean
+        unit_template_registry_read_only:
+          type: boolean
+      type: object
+    OpenbaseTicket:
+      properties:
+        session_key:
+          type: string
+        user_client_pair:
+          $ref: '#/components/schemas/OpenbaseUserClientPair'
+        validity_period:
+          $ref: '#/components/schemas/OpenbaseInterval'
+      type: object
+    OpenbaseTicketAuthenticatorWrapper:
+      properties:
+        authenticator:
+          type: string
+        ticket:
+          type: string
+      type: object
+    OpenbaseTicketSessionKeyWrapper:
+      properties:
+        session_key:
+          type: string
+        ticket:
+          type: string
+      type: object
+    OpenbaseTileConfig:
+      properties:
+        connection_id:
+          items:
+            type: string
+          type: array
+        meta_config:
+          $ref: '#/components/schemas/OpenbaseMetaConfig'
+        tile_type:
+          $ref: '#/components/schemas/OpenbaseTileConfig.TileType'
+      type: object
+    OpenbaseTileConfig.TileType:
+      enum:
+      - OUTDOOR
+      - INDOOR
+      type: string
+    OpenbaseTimestamp:
+      properties:
+        time:
+          format: int64
+          type: integer
+      type: object
+    OpenbaseTrackedPosture3DFloat:
+      properties:
+        confidence:
+          items:
+            format: float
+            type: number
+          type: array
+        info:
+          $ref: '#/components/schemas/OpenbaseTrackingInfo'
+        posture:
+          $ref: '#/components/schemas/OpenbasePosture3DFloat'
+      type: object
+    OpenbaseTrackedPostures3DFloat:
+      properties:
+        posture:
+          items:
+            $ref: '#/components/schemas/OpenbaseTrackedPosture3DFloat'
+          type: array
+      type: object
+    OpenbaseTrackingInfo:
+      properties:
+        id:
+          format: int32
+          type: integer
+        persistent_id:
+          type: string
+      type: object
+    OpenbaseTransactionValue:
+      properties:
+        transaction_id:
+          format: int64
+          type: integer
+        value:
+          type: string
+      type: object
+    OpenbaseTranslation:
+      properties:
+        frame_id:
+          type: string
+        x:
+          format: double
+          type: number
+        y:
+          format: double
+          type: number
+        z:
+          format: double
+          type: number
+      type: object
+    OpenbaseTriggerConfig:
+      properties:
+        depending_ontology_change:
+          $ref: '#/components/schemas/OpenbaseOntologyChange'
+        label:
+          type: string
+        query:
+          type: string
+      type: object
+    OpenbaseUnitConfig:
+      properties:
+        agent_config:
+          $ref: '#/components/schemas/OpenbaseAgentConfig'
+        alias:
+          items:
+            type: string
+          type: array
+        app_config:
+          $ref: '#/components/schemas/OpenbaseAppConfig'
+        authorization_group_config:
+          $ref: '#/components/schemas/OpenbaseAuthorizationGroupConfig'
+        bound_to_unit_host:
+          type: boolean
+        connection_config:
+          $ref: '#/components/schemas/OpenbaseConnectionConfig'
+        description:
+          $ref: '#/components/schemas/OpenbaseMultiLanguageText'
+        device_config:
+          $ref: '#/components/schemas/OpenbaseDeviceConfig'
+        enabling_state:
+          $ref: '#/components/schemas/OpenbaseEnablingState'
+        id:
+          type: string
+        label:
+          $ref: '#/components/schemas/OpenbaseLabel'
+        location_config:
+          $ref: '#/components/schemas/OpenbaseLocationConfig'
+        meta_config:
+          $ref: '#/components/schemas/OpenbaseMetaConfig'
+        object_config:
+          $ref: '#/components/schemas/OpenbaseObjectConfig'
+        permission_config:
+          $ref: '#/components/schemas/OpenbasePermissionConfig'
+        placement_config:
+          $ref: '#/components/schemas/OpenbasePlacementConfig'
+        scene_config:
+          $ref: '#/components/schemas/OpenbaseSceneConfig'
+        scope:
+          $ref: '#/components/schemas/OpenbaseScope'
+        service_config:
+          items:
+            $ref: '#/components/schemas/OpenbaseServiceConfig'
+          type: array
+        unit_group_config:
+          $ref: '#/components/schemas/OpenbaseUnitGroupConfig'
+        unit_host_id:
+          type: string
+        unit_template_config_id:
+          type: string
+        unit_type:
+          $ref: '#/components/schemas/OpenbaseUnitTemplate.UnitType'
+        user_config:
+          $ref: '#/components/schemas/OpenbaseUserConfig'
+      type: object
+    OpenbaseUnitGroupConfig:
+      properties:
+        member_id:
+          items:
+            type: string
+          type: array
+        service_description:
+          items:
+            $ref: '#/components/schemas/OpenbaseServiceDescription'
+          type: array
+        unit_type:
+          $ref: '#/components/schemas/OpenbaseUnitTemplate.UnitType'
+      type: object
+    OpenbaseUnitGroupData:
+      properties:
+        action:
+          items:
+            $ref: '#/components/schemas/OpenbaseActionDescription'
+          type: array
+        alias:
+          items:
+            type: string
+          type: array
+        blind_state:
+          $ref: '#/components/schemas/OpenbaseBlindState'
+        blind_state_last:
+          $ref: '#/components/schemas/OpenbaseBlindState'
+        blind_state_requested:
+          $ref: '#/components/schemas/OpenbaseBlindState'
+        brightness_state:
+          $ref: '#/components/schemas/OpenbaseBrightnessState'
+        brightness_state_last:
+          $ref: '#/components/schemas/OpenbaseBrightnessState'
+        brightness_state_requested:
+          $ref: '#/components/schemas/OpenbaseBrightnessState'
+        color_state:
+          $ref: '#/components/schemas/OpenbaseColorState'
+        color_state_last:
+          $ref: '#/components/schemas/OpenbaseColorState'
+        color_state_requested:
+          $ref: '#/components/schemas/OpenbaseColorState'
+        id:
+          type: string
+        illuminance_state:
+          $ref: '#/components/schemas/OpenbaseIlluminanceState'
+        illuminance_state_last:
+          $ref: '#/components/schemas/OpenbaseIlluminanceState'
+        motion_state:
+          $ref: '#/components/schemas/OpenbaseMotionState'
+        motion_state_last:
+          $ref: '#/components/schemas/OpenbaseMotionState'
+        power_consumption_state:
+          $ref: '#/components/schemas/OpenbasePowerConsumptionState'
+        power_state:
+          $ref: '#/components/schemas/OpenbasePowerState'
+        power_state_last:
+          $ref: '#/components/schemas/OpenbasePowerState'
+        power_state_requested:
+          $ref: '#/components/schemas/OpenbasePowerState'
+        presence_state:
+          $ref: '#/components/schemas/OpenbasePresenceState'
+        presence_state_last:
+          $ref: '#/components/schemas/OpenbasePresenceState'
+        smoke_alarm_state:
+          $ref: '#/components/schemas/OpenbaseAlarmState'
+        smoke_alarm_state_last:
+          $ref: '#/components/schemas/OpenbaseAlarmState'
+        smoke_state:
+          $ref: '#/components/schemas/OpenbaseSmokeState'
+        smoke_state_last:
+          $ref: '#/components/schemas/OpenbaseSmokeState'
+        standby_state:
+          $ref: '#/components/schemas/OpenbaseStandbyState'
+        standby_state_last:
+          $ref: '#/components/schemas/OpenbaseStandbyState'
+        standby_state_requested:
+          $ref: '#/components/schemas/OpenbaseStandbyState'
+        tamper_state:
+          $ref: '#/components/schemas/OpenbaseTamperState'
+        tamper_state_last:
+          $ref: '#/components/schemas/OpenbaseTamperState'
+        target_temperature_state:
+          $ref: '#/components/schemas/OpenbaseTemperatureState'
+        target_temperature_state_last:
+          $ref: '#/components/schemas/OpenbaseTemperatureState'
+        target_temperature_state_requested:
+          $ref: '#/components/schemas/OpenbaseTemperatureState'
+        temperature_alarm_state:
+          $ref: '#/components/schemas/OpenbaseAlarmState'
+        temperature_alarm_state_last:
+          $ref: '#/components/schemas/OpenbaseAlarmState'
+        temperature_state:
+          $ref: '#/components/schemas/OpenbaseTemperatureState'
+        temperature_state_last:
+          $ref: '#/components/schemas/OpenbaseTemperatureState'
+        temperature_state_requested:
+          $ref: '#/components/schemas/OpenbaseTemperatureState'
+        transaction_id:
+          format: int64
+          type: integer
+      type: object
+    OpenbaseUnitProbability:
+      properties:
+        id:
+          type: string
+        probability:
+          format: float
+          type: number
+      type: object
+    OpenbaseUnitProbabilityCollection:
+      properties:
+        element:
+          items:
+            $ref: '#/components/schemas/OpenbaseUnitProbability'
+          type: array
+      type: object
+    OpenbaseUnitRegistryData:
+      properties:
+        agent_unit_config:
+          items:
+            $ref: '#/components/schemas/OpenbaseUnitConfig'
+          type: array
+        agent_unit_config_registry_consistent:
+          type: boolean
+        agent_unit_config_registry_read_only:
+          type: boolean
+        app_unit_config:
+          items:
+            $ref: '#/components/schemas/OpenbaseUnitConfig'
+          type: array
+        app_unit_config_registry_consistent:
+          type: boolean
+        app_unit_config_registry_read_only:
+          type: boolean
+        authorization_group_unit_config:
+          items:
+            $ref: '#/components/schemas/OpenbaseUnitConfig'
+          type: array
+        authorization_group_unit_config_registry_consistent:
+          type: boolean
+        authorization_group_unit_config_registry_read_only:
+          type: boolean
+        connection_unit_config:
+          items:
+            $ref: '#/components/schemas/OpenbaseUnitConfig'
+          type: array
+        connection_unit_config_registry_consistent:
+          type: boolean
+        connection_unit_config_registry_read_only:
+          type: boolean
+        dal_unit_config:
+          items:
+            $ref: '#/components/schemas/OpenbaseUnitConfig'
+          type: array
+        dal_unit_config_registry_consistent:
+          type: boolean
+        dal_unit_config_registry_read_only:
+          type: boolean
+        device_unit_config:
+          items:
+            $ref: '#/components/schemas/OpenbaseUnitConfig'
+          type: array
+        device_unit_config_registry_consistent:
+          type: boolean
+        device_unit_config_registry_read_only:
+          type: boolean
+        label:
+          type: string
+        location_unit_config:
+          items:
+            $ref: '#/components/schemas/OpenbaseUnitConfig'
+          type: array
+        location_unit_config_registry_consistent:
+          type: boolean
+        location_unit_config_registry_read_only:
+          type: boolean
+        object_unit_config:
+          items:
+            $ref: '#/components/schemas/OpenbaseUnitConfig'
+          type: array
+        object_unit_config_registry_consistent:
+          type: boolean
+        object_unit_config_registry_read_only:
+          type: boolean
+        scene_unit_config:
+          items:
+            $ref: '#/components/schemas/OpenbaseUnitConfig'
+          type: array
+        scene_unit_config_registry_consistent:
+          type: boolean
+        scene_unit_config_registry_read_only:
+          type: boolean
+        transaction_id:
+          format: int64
+          type: integer
+        unit_config_registry_consistent:
+          type: boolean
+        unit_config_registry_read_only:
+          type: boolean
+        unit_group_unit_config:
+          items:
+            $ref: '#/components/schemas/OpenbaseUnitConfig'
+          type: array
+        unit_group_unit_config_registry_consistent:
+          type: boolean
+        unit_group_unit_config_registry_read_only:
+          type: boolean
+        user_unit_config:
+          items:
+            $ref: '#/components/schemas/OpenbaseUnitConfig'
+          type: array
+        user_unit_config_registry_consistent:
+          type: boolean
+        user_unit_config_registry_read_only:
+          type: boolean
+      type: object
+    OpenbaseUnitTemplate:
+      properties:
+        id:
+          type: string
+        label:
+          $ref: '#/components/schemas/OpenbaseLabel'
+        meta_config:
+          $ref: '#/components/schemas/OpenbaseMetaConfig'
+        service_description:
+          items:
+            $ref: '#/components/schemas/OpenbaseServiceDescription'
+          type: array
+        super_type:
+          items:
+            $ref: '#/components/schemas/OpenbaseUnitTemplate.UnitType'
+          type: array
+        unit_type:
+          $ref: '#/components/schemas/OpenbaseUnitTemplate.UnitType'
+      type: object
+    OpenbaseUnitTemplate.UnitType:
+      enum:
+      - OBJECT
+      - COLORABLE_LIGHT
+      - BATTERY
+      - BUTTON
+      - SWITCH
+      - DIMMER
+      - DIMMABLE_LIGHT
+      - HANDLE
+      - LIGHT
+      - LIGHT_SENSOR
+      - MOTION_DETECTOR
+      - POWER_CONSUMPTION_SENSOR
+      - POWER_SWITCH
+      - REED_CONTACT
+      - SMOKE_DETECTOR
+      - TAMPER_DETECTOR
+      - TEMPERATURE_CONTROLLER
+      - TEMPERATURE_SENSOR
+      - ROLLER_SHUTTER
+      - MONITOR
+      - DISPLAY
+      - TELEVISION
+      - AUDIO_SOURCE
+      - AUDIO_SINK
+      - VIDEO_RGB_SOURCE
+      - VIDEO_DEPTH_SOURCE
+      - LOCATION
+      - CONNECTION
+      - SCENE
+      - AGENT
+      - APP
+      - DEVICE
+      - USER
+      - AUTHORIZATION_GROUP
+      - UNIT_GROUP
+      - RFID
+      type: string
+    OpenbaseUnitTemplateConfig:
+      properties:
+        id:
+          type: string
+        label:
+          $ref: '#/components/schemas/OpenbaseLabel'
+        meta_config:
+          $ref: '#/components/schemas/OpenbaseMetaConfig'
+        service_template_config:
+          items:
+            $ref: '#/components/schemas/OpenbaseServiceTemplateConfig'
+          type: array
+        unit_type:
+          $ref: '#/components/schemas/OpenbaseUnitTemplate.UnitType'
+      type: object
+    OpenbaseUpDownHolder:
+      properties:
+        state:
+          $ref: '#/components/schemas/OpenbaseUpDownHolder.UpDown'
+      type: object
+    OpenbaseUpDownHolder.UpDown:
+      enum:
+      - DOWN
+      - UP
+      type: string
+    OpenbaseUserClientPair:
+      properties:
+        client_id:
+          type: string
+        user_id:
+          type: string
+      type: object
+    OpenbaseUserConfig:
+      properties:
+        email:
+          type: string
+        first_name:
+          type: string
+        language:
+          type: string
+        last_name:
+          type: string
+        mobile_phone_number:
+          type: string
+        occupant:
+          type: boolean
+        system_user:
+          type: boolean
+        user_name:
+          type: string
+      type: object
+    OpenbaseUserData:
+      properties:
+        action:
+          items:
+            $ref: '#/components/schemas/OpenbaseActionDescription'
+          type: array
+        activity_multi_state:
+          $ref: '#/components/schemas/OpenbaseActivityMultiState'
+        activity_multi_state_last:
+          $ref: '#/components/schemas/OpenbaseActivityMultiState'
+        activity_multi_state_requested:
+          $ref: '#/components/schemas/OpenbaseActivityMultiState'
+        alias:
+          items:
+            type: string
+          type: array
+        global_position_state:
+          $ref: '#/components/schemas/OpenbaseGlobalPositionState'
+        global_position_state_last:
+          $ref: '#/components/schemas/OpenbaseGlobalPositionState'
+        global_position_state_requested:
+          $ref: '#/components/schemas/OpenbaseGlobalPositionState'
+        id:
+          type: string
+        local_position_state:
+          $ref: '#/components/schemas/OpenbaseLocalPositionState'
+        local_position_state_last:
+          $ref: '#/components/schemas/OpenbaseLocalPositionState'
+        local_position_state_requested:
+          $ref: '#/components/schemas/OpenbaseLocalPositionState'
+        presence_state:
+          $ref: '#/components/schemas/OpenbasePresenceState'
+        presence_state_last:
+          $ref: '#/components/schemas/OpenbasePresenceState'
+        presence_state_requested:
+          $ref: '#/components/schemas/OpenbasePresenceState'
+        transaction_id:
+          format: int64
+          type: integer
+        user_transit_state:
+          $ref: '#/components/schemas/OpenbaseUserTransitState'
+        user_transit_state_last:
+          $ref: '#/components/schemas/OpenbaseUserTransitState'
+        user_transit_state_requested:
+          $ref: '#/components/schemas/OpenbaseUserTransitState'
+      type: object
+    OpenbaseUserMessage:
+      properties:
+        acknowledged:
+          type: boolean
+        condition:
+          items:
+            $ref: '#/components/schemas/OpenbaseServiceStateDescription'
+          type: array
+        message_type:
+          $ref: '#/components/schemas/OpenbaseUserMessage.MessageType'
+        recipient_id:
+          type: string
+        sender_id:
+          type: string
+        text:
+          $ref: '#/components/schemas/OpenbaseMultiLanguageText'
+        timestamp:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+      type: object
+    OpenbaseUserMessage.MessageType:
+      enum:
+      - INFO
+      - NOTIFICATION
+      - WARNING
+      - EMERGENCY
+      type: string
+    OpenbaseUserTransitState:
+      properties:
+        last_value_occurrence:
+          items:
+            $ref: '#/components/schemas/OpenbaseUserTransitState.MapFieldEntry'
+          type: array
+        responsible_action:
+          $ref: '#/components/schemas/OpenbaseActionDescription'
+        timestamp:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+        value:
+          $ref: '#/components/schemas/OpenbaseUserTransitState.State'
+      type: object
+    OpenbaseUserTransitState.MapFieldEntry:
+      properties:
+        key:
+          $ref: '#/components/schemas/OpenbaseUserTransitState.State'
+        value:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+      type: object
+    OpenbaseUserTransitState.State:
+      enum:
+      - SOON_ABSENT
+      - SHORT_TERM_ABSENT
+      - LONG_TERM_ABSENT
+      - SOON_PRESENT
+      - SHORT_TERM_PRESENT
+      - LONG_TERM_PRESENT
+      type: string
+    OpenbaseVec3DDouble:
+      properties:
+        x:
+          format: double
+          type: number
+        y:
+          format: double
+          type: number
+        z:
+          format: double
+          type: number
+      type: object
+    OpenbaseVec3DFloat:
+      properties:
+        x:
+          format: float
+          type: number
+        y:
+          format: float
+          type: number
+        z:
+          format: float
+          type: number
+      type: object
+    OpenbaseVideoDepthSourceData:
+      properties:
+        action:
+          items:
+            $ref: '#/components/schemas/OpenbaseActionDescription'
+          type: array
+        alias:
+          items:
+            type: string
+          type: array
+        id:
+          type: string
+        transaction_id:
+          format: int64
+          type: integer
+      type: object
+    OpenbaseVideoRgbSourceData:
+      properties:
+        action:
+          items:
+            $ref: '#/components/schemas/OpenbaseActionDescription'
+          type: array
+        alias:
+          items:
+            type: string
+          type: array
+        id:
+          type: string
+        transaction_id:
+          format: int64
+          type: integer
+      type: object
+    OpenbaseWindowState:
+      properties:
+        last_value_occurrence:
+          items:
+            $ref: '#/components/schemas/OpenbaseWindowState.MapFieldEntry'
+          type: array
+        responsible_action:
+          $ref: '#/components/schemas/OpenbaseActionDescription'
+        timestamp:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+        value:
+          $ref: '#/components/schemas/OpenbaseWindowState.State'
+      type: object
+    OpenbaseWindowState.MapFieldEntry:
+      properties:
+        key:
+          $ref: '#/components/schemas/OpenbaseWindowState.State'
+        value:
+          $ref: '#/components/schemas/OpenbaseTimestamp'
+      type: object
+    OpenbaseWindowState.State:
+      enum:
+      - CLOSED
+      - OPEN
+      - TILTED
+      type: string
     PowerState:
       properties:
         value:
+          example: true
           type: string
-          example: ON
-
+info:
+  description: Optional multiline or single-line description in [CommonMark](http://commonmark.org/help/)
+    or HTML.
+  title: Sample API
+  version: 0.1.9
+openapi: 3.0.0
 paths:
   /light:
     get:
-      summary: Returns the light unit data.
       responses:
         '200':
-          description: A light data object.
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/LightData'
+          description: A light data object.
         default:
           description: Unexpected error
+      summary: Returns the light unit data.
     post:
-      summary: Set the light unit data.
       requestBody:
-        required: true
         content:
           application/json:
             schema:
               $ref: '#/components/schemas/LightData'
+        required: true
       responses:
         '201':
           description: Set successful.
         default:
           description: Unexpected error
-
-
+      summary: Set the light unit data.
+servers:
+- description: Optional server description, e.g. Main (production) server
+  url: http://localhost:8000
