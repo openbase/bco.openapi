@@ -1,24 +1,21 @@
 
 
 # prepare swagger if needed
-export CODE_GEN="swagger-codegen/modules/swagger-codegen-cli/target/swagger-codegen-cli.jar"
+export CODE_GEN="openapi-generator/modules/openapi-generator-cli/target/openapi-generator-cli.jar"
 if test -f "${CODE_GEN}"; then
-    echo "using existing swagger-codegen"
+    echo "using existing openapi-codegen"
 else
-    echo "install swagger-codegen"
+    echo "install openapi-codegen"
     git submodule init
     git submodule update
-    cd swagger-codegen
-    git checkout v3.0.8
+    cd openapi-generator
     mvn install -DskipTests
     cd ..
 fi
 
-# create cient folder if needed
-mkdir -p client-java client-spring client-jaxrs-jersey
+# create server folder if needed
+mkdir -p server-spring
 
 # generate clients
-java -jar ${CODE_GEN} generate -i api/bco-openapi.yaml -o client-java -l java
-java -jar ${CODE_GEN} generate -i api/bco-openapi.yaml -o client-spring -l spring
-java -jar ${CODE_GEN} generate -i api/bco-openapi.yaml -o client-jaxrs-jersey -l jaxrs-jersey
+java -jar ${CODE_GEN} generate -i api/bco-openapi.yaml -o server-spring -g spring
 
