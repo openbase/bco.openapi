@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.openbase:jul.annotation:2.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/jul.annotation/2.0-SNAPSHOT/jul.annotation-2.0-20190615.024053-214.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/jul.annotation/2.0-SNAPSHOT/jul.annotation-2.0-20190615.024053-214-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/jul.annotation/2.0-SNAPSHOT/jul.annotation-2.0-20190615.024053-214-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

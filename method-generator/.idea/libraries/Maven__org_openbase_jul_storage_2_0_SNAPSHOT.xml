@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.openbase:jul.storage:2.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/jul.storage/2.0-SNAPSHOT/jul.storage-2.0-20190615.024102-219.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/jul.storage/2.0-SNAPSHOT/jul.storage-2.0-20190615.024102-219-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/jul.storage/2.0-SNAPSHOT/jul.storage-2.0-20190615.024102-219-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

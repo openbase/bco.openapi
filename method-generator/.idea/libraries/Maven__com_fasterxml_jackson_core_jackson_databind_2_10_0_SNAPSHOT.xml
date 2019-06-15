@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.fasterxml.jackson.core:jackson-databind:2.10.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.10.0-SNAPSHOT/jackson-databind-2.10.0-20190614.033612-195.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.10.0-SNAPSHOT/jackson-databind-2.10.0-20190614.033612-195-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.10.0-SNAPSHOT/jackson-databind-2.10.0-20190614.033612-195-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

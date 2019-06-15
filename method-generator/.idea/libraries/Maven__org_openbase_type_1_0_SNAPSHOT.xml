@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.openbase:type:1.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/type/1.0-SNAPSHOT/type-1.0-20190613.105622-64.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/type/1.0-SNAPSHOT/type-1.0-20190613.105622-64-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/type/1.0-SNAPSHOT/type-1.0-20190613.105622-64-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

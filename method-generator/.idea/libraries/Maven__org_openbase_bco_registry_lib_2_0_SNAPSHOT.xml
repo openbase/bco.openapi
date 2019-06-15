@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.openbase:bco.registry.lib:2.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/bco.registry.lib/2.0-SNAPSHOT/bco.registry.lib-2.0-20190615.124715-290.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/bco.registry.lib/2.0-SNAPSHOT/bco.registry.lib-2.0-20190615.124715-290-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/bco.registry.lib/2.0-SNAPSHOT/bco.registry.lib-2.0-20190615.124715-290-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

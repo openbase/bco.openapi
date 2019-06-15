@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.openbase:jul.schedule:2.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/jul.schedule/2.0-SNAPSHOT/jul.schedule-2.0-20190615.024050-219.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/jul.schedule/2.0-SNAPSHOT/jul.schedule-2.0-20190615.024050-219-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/jul.schedule/2.0-SNAPSHOT/jul.schedule-2.0-20190615.024050-219-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
