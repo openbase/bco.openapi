@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.openbase:jul.interface:2.0-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/jul.interface/2.0-SNAPSHOT/jul.interface-2.0-20190706.090341-231.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/jul.interface/2.0-SNAPSHOT/jul.interface-2.0-SNAPSHOT.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/jul.interface/2.0-SNAPSHOT/jul.interface-2.0-20190706.090341-231-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/jul.interface/2.0-SNAPSHOT/jul.interface-2.0-SNAPSHOT-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/jul.interface/2.0-SNAPSHOT/jul.interface-2.0-20190706.090341-231-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/jul.interface/2.0-SNAPSHOT/jul.interface-2.0-SNAPSHOT-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

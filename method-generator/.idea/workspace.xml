@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a44c4c5d-f694-4b09-9050-59462e2c62ed" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/openbase/bco/api/generator/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openbase/bco/api/generator/Generator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server-spring/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../server-spring/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server-spring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../server-spring/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server-spring/src/main/java/org/openapitools/api/LightApi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server-spring/src/main/java/org/openapitools/api/LightApiController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../server-spring/src/main/java/org/openapitools/api/RegisrtyRPCProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server-spring/src/main/java/org/openapitools/api/RegisrtyRPCProcessor.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
@@ -23,7 +24,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/openbase/bco/api/generator/Generator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
+            <state relative-caret-position="1947">
               <caret line="132" selection-start-line="132" selection-end-line="132" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -243,12 +244,12 @@
       <workItem from="1560951658334" duration="671000" />
       <workItem from="1561123652758" duration="634000" />
       <workItem from="1562249119995" duration="617000" />
-      <workItem from="1562400575728" duration="15466000" />
+      <workItem from="1562400575728" duration="15775000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35009000" />
+    <option name="totallyTimeSpent" value="35318000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
@@ -347,7 +348,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/openbase/bco/api/generator/Generator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
+        <state relative-caret-position="1947">
           <caret line="132" selection-start-line="132" selection-end-line="132" />
           <folding>
             <element signature="imports" expanded="true" />

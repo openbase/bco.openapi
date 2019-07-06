@@ -19,12 +19,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-public class RegisrtyRPCProcessor {
+public class RegistryRPCProcessor {
 
     static final ObjectMapper OBJECT_MAPPER = new ObjectMapper().setSerializationInclusion(JsonInclude.Include.NON_NULL);
     static final JsonFormat JSON_FORMAT = new JsonFormat();
 
-    static <T> T invokeMethod(final Object parameter, final Class<T> returnClass) throws CouldNotPerformException {
+    public static <T> T invokeMethod(final Object parameter, final Class<T> returnClass) throws CouldNotPerformException {
         StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
         String methodName = stackTrace[2].getMethodName();
 

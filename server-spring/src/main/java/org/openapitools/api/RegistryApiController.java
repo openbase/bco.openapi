@@ -14,8 +14,7 @@ public class RegistryApiController implements RegistryApi {
 
     @org.springframework.beans.factory.annotation.Autowired
     public RegistryApiController(NativeWebRequest request) {
-        this.request = request;
-    }
+        this.request = request;    }
 
     @Override
     public Optional<NativeWebRequest> getRequest() {
