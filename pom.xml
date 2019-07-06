@@ -123,16 +123,22 @@
                             -->
                             <configOptions>
                                 <title>BCO OpenAPI Server</title>
-                                <modelPackage>${project.groupId}.${project.artifactId}.server.model</modelPackage>
-                                <apiPackage>${project.groupId}.${project.artifactId}.server.api</apiPackage>
                                 <groupId>${project.groupId}</groupId>
                                 <artifactId>${project.artifactId}.server</artifactId>
                                 <artifactVersion>${project.version}</artifactVersion>
                                 <artifactDescription>This is the openapi generated server interface of bco.</artifactDescription>
                                 <scmConnection>https://github.com/openbase/bco.openapi.git</scmConnection>
-                                <!-- <invokerPackage></invokerPackage> -->
+
+                                <modelPackage>${project.groupId}.${project.artifactId}.server.model</modelPackage>
+                                <apiPackage>${project.groupId}.${project.artifactId}.server.api</apiPackage>
+                                <invokerPackage>${project.groupId}.${project.artifactId}.server.handler</invokerPackage>
+
+                                <!-- make sure only interfaces are generated because the implementation is placed in bco.app -->
+                                <interfaceOnly>true</interfaceOnly>
+
                                 <library>spring-boot</library>
-                                <sourceFolder>src/gen/java/main</sourceFolder>
+                                <!--  <sourceFolder>src/gen/java/main</sourceFolder>-->
+                                <!-- does not work <output>server-spring</output>-->
                             </configOptions>
                         </configuration>
                     </execution>
