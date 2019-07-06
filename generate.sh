@@ -16,6 +16,6 @@ fi
 # create server folder if needed
 mkdir -p server-spring
 
-# generate clients
+# generate server
 java -jar ${CODE_GEN} generate -i api/bco-openapi.yaml -o server-spring -g spring
 
