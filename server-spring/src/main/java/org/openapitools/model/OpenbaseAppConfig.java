@@ -14,7 +14,7 @@ import javax.validation.constraints.*;
 /**
  * OpenbaseAppConfig
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2019-06-17T16:47:17.146638+02:00[Europe/Berlin]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2019-07-06T14:31:08.291817+02:00[Europe/Berlin]")
 
 public class OpenbaseAppConfig   {
   @JsonProperty("app_class_id")

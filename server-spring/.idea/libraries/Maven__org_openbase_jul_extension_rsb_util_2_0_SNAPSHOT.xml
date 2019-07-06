@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.openbase:jul.extension.rsb.util:2.0-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/jul.extension.rsb.util/2.0-SNAPSHOT/jul.extension.rsb.util-2.0-20190617.132818-221.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/jul.extension.rsb.util/2.0-SNAPSHOT/jul.extension.rsb.util-2.0-20190706.090541-229.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/jul.extension.rsb.util/2.0-SNAPSHOT/jul.extension.rsb.util-2.0-20190617.132818-221-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/jul.extension.rsb.util/2.0-SNAPSHOT/jul.extension.rsb.util-2.0-20190706.090541-229-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/jul.extension.rsb.util/2.0-SNAPSHOT/jul.extension.rsb.util-2.0-20190617.132818-221-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/jul.extension.rsb.util/2.0-SNAPSHOT/jul.extension.rsb.util-2.0-20190706.090541-229-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

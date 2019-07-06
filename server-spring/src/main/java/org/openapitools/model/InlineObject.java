@@ -5,7 +5,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import org.openapitools.model.OpenbaseServiceTemplateServicePattern;
 import org.openapitools.model.OpenbaseServiceTemplateServiceType;
 import org.openapitools.jackson.nullable.JsonNullable;
 import javax.validation.Valid;
@@ -14,55 +13,31 @@ import javax.validation.constraints.*;
 /**
  * InlineObject
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2019-06-17T16:47:17.146638+02:00[Europe/Berlin]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2019-07-06T14:31:08.291817+02:00[Europe/Berlin]")
 
 public class InlineObject   {
-  @JsonProperty("serviceType")
-  private OpenbaseServiceTemplateServiceType serviceType;
+  @JsonProperty("arg0")
+  private OpenbaseServiceTemplateServiceType arg0;
 
-  @JsonProperty("servicePattern")
-  private OpenbaseServiceTemplateServicePattern servicePattern;
-
-  public InlineObject serviceType(OpenbaseServiceTemplateServiceType serviceType) {
-    this.serviceType = serviceType;
+  public InlineObject arg0(OpenbaseServiceTemplateServiceType arg0) {
+    this.arg0 = arg0;
     return this;
   }
 
   /**
-   * Get serviceType
-   * @return serviceType
+   * Get arg0
+   * @return arg0
   */
   @ApiModelProperty(value = "")
 
   @Valid
 
-  public OpenbaseServiceTemplateServiceType getServiceType() {
-    return serviceType;
+  public OpenbaseServiceTemplateServiceType getArg0() {
+    return arg0;
   }
 
-  public void setServiceType(OpenbaseServiceTemplateServiceType serviceType) {
-    this.serviceType = serviceType;
-  }
-
-  public InlineObject servicePattern(OpenbaseServiceTemplateServicePattern servicePattern) {
-    this.servicePattern = servicePattern;
-    return this;
-  }
-
-  /**
-   * Get servicePattern
-   * @return servicePattern
-  */
-  @ApiModelProperty(value = "")
-
-  @Valid
-
-  public OpenbaseServiceTemplateServicePattern getServicePattern() {
-    return servicePattern;
-  }
-
-  public void setServicePattern(OpenbaseServiceTemplateServicePattern servicePattern) {
-    this.servicePattern = servicePattern;
+  public void setArg0(OpenbaseServiceTemplateServiceType arg0) {
+    this.arg0 = arg0;
   }
 
 
@@ -75,13 +50,12 @@ public class InlineObject   {
       return false;
     }
     InlineObject inlineObject = (InlineObject) o;
-    return Objects.equals(this.serviceType, inlineObject.serviceType) &&
-        Objects.equals(this.servicePattern, inlineObject.servicePattern);
+    return Objects.equals(this.arg0, inlineObject.arg0);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(serviceType, servicePattern);
+    return Objects.hash(arg0);
   }
 
   @Override
@@ -89,8 +63,7 @@ public class InlineObject   {
     StringBuilder sb = new StringBuilder();
     sb.append("class InlineObject {\n");
     
-    sb.append("    serviceType: ").append(toIndentedString(serviceType)).append("\n");
-    sb.append("    servicePattern: ").append(toIndentedString(servicePattern)).append("\n");
+    sb.append("    arg0: ").append(toIndentedString(arg0)).append("\n");
     sb.append("}");
     return sb.toString();
   }
