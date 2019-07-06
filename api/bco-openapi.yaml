@@ -3575,7 +3575,10 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/OpenbaseServiceTemplate.ServiceType'
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseServiceTemplate.ServiceType'
       responses:
         '200':
           description: success
@@ -3592,7 +3595,10 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/OpenbaseServiceTemplate'
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseServiceTemplate'
       responses:
         '200':
           description: success
@@ -3607,7 +3613,10 @@ paths:
         content:
           application/json:
             schema:
-              type: string
+              type: object
+              properties:
+                arg0:
+                  type: string
       responses:
         '200':
           description: success
@@ -3622,7 +3631,10 @@ paths:
         content:
           application/json:
             schema:
-              type: string
+              type: object
+              properties:
+                arg0:
+                  type: string
       responses:
         '200':
           description: success
@@ -3637,7 +3649,10 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/OpenbaseServiceTemplate.ServiceType'
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseServiceTemplate.ServiceType'
       responses:
         '200':
           description: success
@@ -3652,7 +3667,10 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/OpenbaseActivityTemplate'
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseActivityTemplate'
       responses:
         '200':
           description: success
@@ -3667,7 +3685,10 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/OpenbaseServiceTemplate.ServiceType'
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseServiceTemplate.ServiceType'
       responses:
         '200':
           description: success
@@ -3697,10 +3718,10 @@ paths:
             schema:
               type: object
               properties:
-                serviceType:
-                  $ref: '#/components/schemas/OpenbaseServiceTemplate.ServiceType'
-                servicePattern:
+                arg1:
                   $ref: '#/components/schemas/OpenbaseServiceTemplate.ServicePattern'
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseServiceTemplate.ServiceType'
       responses:
         '200':
           description: success
@@ -3715,7 +3736,10 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/OpenbaseUnitTemplate.UnitType'
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseUnitTemplate.UnitType'
       responses:
         '200':
           description: success
@@ -3730,7 +3754,10 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/OpenbaseActivityTemplate.ActivityType'
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseActivityTemplate.ActivityType'
       responses:
         '200':
           description: success
@@ -3745,7 +3772,10 @@ paths:
         content:
           application/json:
             schema:
-              type: string
+              type: object
+              properties:
+                arg0:
+                  type: string
       responses:
         '200':
           description: success
@@ -3771,7 +3801,10 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/OpenbaseTransactionValue'
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseTransactionValue'
       responses:
         '200':
           description: success
@@ -3786,7 +3819,10 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/OpenbaseTransactionValue'
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseTransactionValue'
       responses:
         '200':
           description: success
@@ -3801,7 +3837,10 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/OpenbaseUnitTemplate.UnitType'
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseUnitTemplate.UnitType'
       responses:
         '200':
           description: success
@@ -3818,7 +3857,10 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/OpenbaseServiceTemplate.ServiceType'
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseServiceTemplate.ServiceType'
       responses:
         '200':
           description: success
@@ -3833,7 +3875,10 @@ paths:
         content:
           application/json:
             schema:
-              type: string
+              type: object
+              properties:
+                arg0:
+                  type: string
       responses:
         '200':
           description: success
@@ -3859,7 +3904,10 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/OpenbaseUnitTemplate'
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseUnitTemplate'
       responses:
         '200':
           description: success
@@ -3874,7 +3922,10 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/OpenbaseActivityTemplate'
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseActivityTemplate'
       responses:
         '200':
           description: success
@@ -3898,7 +3949,10 @@ paths:
         content:
           application/json:
             schema:
-              type: string
+              type: object
+              properties:
+                arg0:
+                  type: string
       responses:
         '200':
           description: success
@@ -3913,7 +3967,10 @@ paths:
         content:
           application/json:
             schema:
-              type: string
+              type: object
+              properties:
+                arg0:
+                  type: string
       responses:
         '200':
           description: success
@@ -3946,7 +4003,10 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/OpenbaseUnitTemplate'
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseUnitTemplate'
       responses:
         '200':
           description: success
@@ -3961,7 +4021,10 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/OpenbaseServiceTemplate'
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseServiceTemplate'
       responses:
         '200':
           description: success
@@ -3985,7 +4048,10 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/OpenbaseUnitTemplate.UnitType'
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseUnitTemplate.UnitType'
       responses:
         '200':
           description: success
@@ -4002,7 +4068,10 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/OpenbaseTransactionValue'
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseTransactionValue'
       responses:
         '200':
           description: success
@@ -4028,6 +4097,2247 @@ paths:
             application/json:
               schema:
                 type: boolean
+  /registry/class/registerAgentClassVerified:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseTransactionValue'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseTransactionValue'
+  /registry/class/getAgentClasses:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OpenbaseAgentClass'
+  /registry/class/containsAgentClass:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseAgentClass'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/class/registerAgentClass:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseAgentClass'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseAgentClass'
+  /registry/class/removeDeviceClass:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseDeviceClass'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseDeviceClass'
+  /registry/class/registerAppClass:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseAppClass'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseAppClass'
+  /registry/class/getDeviceClassById:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseDeviceClass'
+  /registry/class/containsDeviceClassById:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/class/containsAppClass:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseAppClass'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/class/removeDeviceClassVerified:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseTransactionValue'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseTransactionValue'
+  /registry/class/removeAppClass:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseAppClass'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseAppClass'
+  /registry/class/isAppClassRegistryReadOnly:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/class/getAppClassById:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseAppClass'
+  /registry/class/updateAgentClassVerified:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseTransactionValue'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseTransactionValue'
+  /registry/class/isAgentClassRegistryConsistent:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/class/removeAppClassVerified:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseTransactionValue'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseTransactionValue'
+  /registry/class/isDeviceClassRegistryConsistent:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/class/getDeviceClasses:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OpenbaseDeviceClass'
+  /registry/class/registerDeviceClass:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseDeviceClass'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseDeviceClass'
+  /registry/class/updateDeviceClassVerified:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseTransactionValue'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseTransactionValue'
+  /registry/class/updateAgentClass:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseAgentClass'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseAgentClass'
+  /registry/class/containsDeviceClass:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseDeviceClass'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/class/removeAgentClassVerified:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseTransactionValue'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseTransactionValue'
+  /registry/class/updateAppClassVerified:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseTransactionValue'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseTransactionValue'
+  /registry/class/updateDeviceClass:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseDeviceClass'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseDeviceClass'
+  /registry/class/isAgentClassRegistryReadOnly:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/class/containsAppClassById:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/class/isAppClassRegistryConsistent:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/class/removeAgentClass:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseAgentClass'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseAgentClass'
+  /registry/class/isDeviceClassRegistryReadOnly:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/class/updateAppClass:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseAppClass'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseAppClass'
+  /registry/class/registerDeviceClassVerified:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseTransactionValue'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseTransactionValue'
+  /registry/class/getAppClasses:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OpenbaseAppClass'
+  /registry/class/containsAgentClassById:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/class/getAgentClassById:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseAgentClass'
+  /registry/class/registerAppClassVerified:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseTransactionValue'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseTransactionValue'
+  /registry/unit/removeUnitConfig:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseUnitConfig'
+  /registry/unit/isConnectionUnitRegistryReadOnly:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/unit/updateUnitConfigAuthenticated:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseAuthenticatedValue'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseAuthenticatedValue'
+  /registry/unit/getUnitRotationGlobalQuat4d:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema: {}
+  /registry/unit/requestAuthorizationToken:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseAuthorizationToken'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: string
+  /registry/unit/isUnitGroupUnitRegistryReadOnly:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/unit/requestAuthenticationTokenAuthenticated:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseAuthenticatedValue'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseAuthenticatedValue'
+  /registry/unit/getRootToUnitTransformationFuture:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema: {}
+  /registry/unit/registerUnitConfigAuthenticated:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseAuthenticatedValue'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseAuthenticatedValue'
+  /registry/unit/getUnitConfigById:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg1:
+                  $ref: '#/components/schemas/OpenbaseUnitTemplate.UnitType'
+                arg0:
+                  type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseUnitConfig'
+  /registry/unit/getUnitScopeByAlias:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: string
+  /registry/unit/isAuthorizationGroupUnitRegistryReadOnly:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/unit/isUnitGroupConfigRegistryConsistent:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/unit/getUnitTransformationFuture:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg1:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema: {}
+  /registry/unit/getUnitRotationGlobal:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseRotation'
+  /registry/unit/getUnitGroupUnitConfigsByUnitType:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseUnitTemplate.UnitType'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+  /registry/unit/getLocationUnitConfigsByType:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseLocationConfig.LocationType'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+  /registry/unit/getUnitConfigs:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+  /registry/unit/getDalUnitConfigs:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+  /registry/unit/getAgentUnitConfigsByAgentClassId:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+  /registry/unit/containsUnitConfigById:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/unit/getUnitConfigsByLabelAndUnitType:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg1:
+                  $ref: '#/components/schemas/OpenbaseUnitTemplate.UnitType'
+                arg0:
+                  type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+  /registry/unit/getUnitConfigsByCoordinate:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseVec3DDouble'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+  /registry/unit/getUnitPositionGlobalVector3d:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema: {}
+  /registry/unit/verifyUnitGroupUnitConfig:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema: {}
+  /registry/unit/isDalUnitConfigRegistryConsistent:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/unit/getUnitPositionGlobalVec3DDouble:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseVec3DDouble'
+  /registry/unit/getServiceConfigsByConnection:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OpenbaseServiceConfig'
+  /registry/unit/removeUnitConfigAuthenticated:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseAuthenticatedValue'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseAuthenticatedValue'
+  /registry/unit/getUnitToRootTransformation:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema: {}
+  /registry/unit/getUnitToRootTransformationFuture:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema: {}
+  /registry/unit/getUnitToRootTransform3D:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema: {}
+  /registry/unit/containsUnitConfigByAlias:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/unit/isConnectionUnitRegistryConsistent:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/unit/isDeviceUnitRegistryConsistent:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/unit/isUnitGroupUnitRegistryConsistent:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/unit/getAgentUnitConfigsByAgentClass:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseAgentClass'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+  /registry/unit/getUnitPositionGlobal:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseTranslation'
+  /registry/unit/isSceneUnitRegistryConsistent:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/unit/getRootToUnitTransform3D:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema: {}
+  /registry/unit/getUnitGroupUnitConfigsByServiceTypes:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  type: array
+                  items:
+                    $ref: '#/components/schemas/OpenbaseServiceTemplate.ServiceType'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+  /registry/unit/getRootToUnitTransformation:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema: {}
+  /registry/unit/isUnitGroupConfigRegistryReadOnly:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/unit/isUserUnitRegistryReadOnly:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/unit/getUnitConfigsByService:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  type: array
+                  items:
+                    $ref: '#/components/schemas/OpenbaseServiceTemplate.ServiceType'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+  /registry/unit/getRootLocationConfig:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseUnitConfig'
+  /registry/unit/getAppUnitConfigsByAppClass:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseAppClass'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+  /registry/unit/getLocationUnitConfigsByCoordinate:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg1:
+                  $ref: '#/components/schemas/OpenbaseLocationConfig.LocationType'
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseVec3DDouble'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+  /registry/unit/getBaseUnitConfigs:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+  /registry/unit/getUnitConfigsByUnitTypeAndServiceTypes:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg1:
+                  $ref: '#/components/schemas/OpenbaseServiceTemplate.ServiceType'
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseUnitTemplate.UnitType'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+  /registry/unit/isAgentUnitRegistryConsistent:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/unit/getAuthorizationGroupMap:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema: {}
+  /registry/unit/isAppUnitRegistryReadOnly:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/unit/isObjectUnitRegistryReadOnly:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/unit/isUserUnitRegistryConsistent:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/unit/updateUnitConfig:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseUnitConfig'
+  /registry/unit/getUnitGroupUnitConfigsByUnitConfig:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+  /registry/unit/isAppUnitRegistryConsistent:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/unit/isAuthorizationGroupUnitRegistryConsistent:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/unit/registerUnitConfig:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseUnitConfig'
+  /registry/unit/isAgentUnitRegistryReadOnly:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/unit/isUnitConfigRegistryReadOnly:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/unit/isUnitConfigRegistryConsistent:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/unit/getUnitScopeById:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: string
+  /registry/unit/getUnitConfigsByLabel:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+  /registry/unit/isLocationUnitRegistryReadOnly:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/unit/getUnitTransformation:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg1:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema: {}
+  /registry/unit/getUnitConfigsByUnitGroupConfig:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+  /registry/unit/getUnitConfigsByLabelAndLocation:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg1:
+                  type: string
+                arg0:
+                  type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+  /registry/unit/isDeviceUnitRegistryReadOnly:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/unit/getAppUnitConfigsByAppClassId:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+  /registry/unit/getServiceConfigsByLocation:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OpenbaseServiceConfig'
+  /registry/unit/getUnitConfigsByConnection:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+  /registry/unit/getUnitPositionGlobalPoint3d:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema: {}
+  /registry/unit/containsUnitConfig:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/unit/getUserUnitIdByUserName:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: string
+  /registry/unit/getUnitConfigsByLocationAlias:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+  /registry/unit/requestAuthenticationToken:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseAuthenticationToken'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: string
+  /registry/unit/getUnitBoundingBoxCenterGlobalPoint3d:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema: {}
+  /registry/unit/getUnitShape:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseShape'
+  /registry/unit/isObjectUnitRegistryConsistent:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/unit/getUnitBoundingBoxCenterPoint3d:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema: {}
+  /registry/unit/getServiceConfigs:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OpenbaseServiceConfig'
+  /registry/unit/getUnitConfigByScope:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseScope'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseUnitConfig'
+  /registry/unit/getUnitConfigByAlias:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg1:
+                  $ref: '#/components/schemas/OpenbaseUnitTemplate.UnitType'
+                arg0:
+                  type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseUnitConfig'
+  /registry/unit/getUnitConfigsByLocation:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+  /registry/unit/getLocationMap:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema: {}
+  /registry/unit/getNeighborLocations:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+  /registry/unit/isLocationUnitRegistryConsistent:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/unit/isSceneUnitRegistryReadOnly:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/unit/getUnitConfigsByServices:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  type: array
+                  items:
+                    $ref: '#/components/schemas/OpenbaseServiceTemplate.ServiceType'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
+  /registry/unit/getServiceTypesByLocation:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OpenbaseServiceTemplate.ServiceType'
+  /registry/unit/isDalUnitConfigRegistryReadOnly:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/unit/requestAuthorizationTokenAuthenticated:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseAuthenticatedValue'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseAuthenticatedValue'
+  /registry/activity/removeActivityConfig:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseActivityConfig'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseActivityConfig'
+  /registry/activity/getActivityConfigs:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OpenbaseActivityConfig'
+  /registry/activity/updateActivityConfig:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseActivityConfig'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseActivityConfig'
+  /registry/activity/registerActivityConfigVerified:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseTransactionValue'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseTransactionValue'
+  /registry/activity/containsActivityConfigById:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/activity/isActivityConfigRegistryConsistent:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/activity/containsActivityConfig:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseActivityConfig'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/activity/registerActivityConfig:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseActivityConfig'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseActivityConfig'
+  /registry/activity/isActivityConfigRegistryReadOnly:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/activity/updateActivityConfigVerified:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseTransactionValue'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseTransactionValue'
+  /registry/activity/getActivityConfigById:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseActivityConfig'
+  /registry/activity/removeActivityConfigVerified:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseTransactionValue'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseTransactionValue'
+  /registry/activity/getActivityConfigsByType:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                arg0:
+                  $ref: '#/components/schemas/OpenbaseActivityTemplate.ActivityType'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OpenbaseActivityConfig'
 servers:
 - description: Optional server description, e.g. Main (production) server
   url: http://localhost:8000
