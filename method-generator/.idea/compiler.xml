@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="bco.api.genereator" target="7" />
+      <module name="bco.api.genereator" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

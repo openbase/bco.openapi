@@ -13,7 +13,7 @@ import javax.validation.constraints.*;
  * PowerState
  */
 @Validated
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2019-05-18T13:17:07.324917+02:00[Europe/Berlin]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2019-06-18T16:31:38.671215+02:00[Europe/Berlin]")
 public class PowerState   {
   @JsonProperty("value")
   private String value = null;

@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.openbase:jul.extension.rsb.processing:2.0-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/jul.extension.rsb.processing/2.0-SNAPSHOT/jul.extension.rsb.processing-2.0-SNAPSHOT.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/jul.extension.rsb.processing/2.0-SNAPSHOT/jul.extension.rsb.processing-2.0-20190617.151104-222.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/jul.extension.rsb.processing/2.0-SNAPSHOT/jul.extension.rsb.processing-2.0-SNAPSHOT-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/jul.extension.rsb.processing/2.0-SNAPSHOT/jul.extension.rsb.processing-2.0-20190617.151104-222-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/jul.extension.rsb.processing/2.0-SNAPSHOT/jul.extension.rsb.processing-2.0-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/jul.extension.rsb.processing/2.0-SNAPSHOT/jul.extension.rsb.processing-2.0-20190617.151104-222-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

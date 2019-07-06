@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.openbase:jul.exception:2.0-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/jul.exception/2.0-SNAPSHOT/jul.exception-2.0-SNAPSHOT.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/jul.exception/2.0-SNAPSHOT/jul.exception-2.0-20190617.151149-224.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/jul.exception/2.0-SNAPSHOT/jul.exception-2.0-SNAPSHOT-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/jul.exception/2.0-SNAPSHOT/jul.exception-2.0-20190617.151149-224-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/jul.exception/2.0-SNAPSHOT/jul.exception-2.0-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/jul.exception/2.0-SNAPSHOT/jul.exception-2.0-20190617.151149-224-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

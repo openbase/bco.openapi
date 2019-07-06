@@ -3568,6 +3568,466 @@ paths:
         default:
           description: Unexpected error
       summary: Set the light unit data.
+  /registry/template/getSuperServiceTypes:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OpenbaseServiceTemplate.ServiceType'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OpenbaseServiceTemplate.ServiceType'
+  /registry/template/containsServiceTemplate:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OpenbaseServiceTemplate'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/template/getUnitTemplateById:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseUnitTemplate'
+  /registry/template/containsActivityTemplateById:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/template/getServiceStateClassName:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OpenbaseServiceTemplate.ServiceType'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: string
+  /registry/template/updateActivityTemplate:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OpenbaseActivityTemplate'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseActivityTemplate'
+  /registry/template/getSubServiceTypes:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OpenbaseServiceTemplate.ServiceType'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OpenbaseServiceTemplate.ServiceType'
+  /registry/template/getActivityTemplates:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OpenbaseActivityTemplate'
+  /registry/template/validateServicePatternSupport:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                serviceType:
+                  $ref: '#/components/schemas/OpenbaseServiceTemplate.ServiceType'
+                servicePattern:
+                  $ref: '#/components/schemas/OpenbaseServiceTemplate.ServicePattern'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/template/getUnitTemplateByType:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OpenbaseUnitTemplate.UnitType'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseUnitTemplate'
+  /registry/template/getActivityTemplateByType:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OpenbaseActivityTemplate.ActivityType'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseActivityTemplate'
+  /registry/template/containsUnitTemplateById:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/template/getUnitTemplates:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OpenbaseUnitTemplate'
+  /registry/template/updateActivityTemplateVerified:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OpenbaseTransactionValue'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseTransactionValue'
+  /registry/template/updateUnitTemplateVerified:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OpenbaseTransactionValue'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseTransactionValue'
+  /registry/template/getSuperUnitTypes:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OpenbaseUnitTemplate.UnitType'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OpenbaseUnitTemplate.UnitType'
+  /registry/template/getServiceTemplateByType:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OpenbaseServiceTemplate.ServiceType'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseServiceTemplate'
+  /registry/template/containsServiceTemplateById:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/template/getServiceTemplates:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OpenbaseServiceTemplate'
+  /registry/template/containsUnitTemplate:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OpenbaseUnitTemplate'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/template/containsActivityTemplate:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OpenbaseActivityTemplate'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/template/isUnitTemplateRegistryReadOnly:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/template/getActivityTemplateById:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseActivityTemplate'
+  /registry/template/getServiceTemplateById:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: string
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseServiceTemplate'
+  /registry/template/isServiceTemplateRegistryConsistent:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/template/isServiceTemplateRegistryReadOnly:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/template/updateUnitTemplate:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OpenbaseUnitTemplate'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseUnitTemplate'
+  /registry/template/updateServiceTemplate:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OpenbaseServiceTemplate'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseServiceTemplate'
+  /registry/template/isActivityTemplateRegistryReadOnly:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/template/getSubUnitTypes:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OpenbaseUnitTemplate.UnitType'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OpenbaseUnitTemplate.UnitType'
+  /registry/template/updateServiceTemplateVerified:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OpenbaseTransactionValue'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseTransactionValue'
+  /registry/template/isActivityTemplateRegistryConsistent:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
+  /registry/template/isUnitTemplateRegistryConsistent:
+    get:
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: boolean
 servers:
 - description: Optional server description, e.g. Main (production) server
   url: http://localhost:8000

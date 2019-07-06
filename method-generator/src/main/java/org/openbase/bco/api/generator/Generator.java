@@ -2,10 +2,8 @@ package org.openbase.bco.api.generator;
 
 import com.google.protobuf.Message;
 import com.google.protobuf.ProtocolMessageEnum;
-import org.eclipse.jgit.lib.ObjectIdOwnerMap;
 import org.openbase.bco.registry.template.lib.TemplateRegistry;
 import org.openbase.jul.exception.CouldNotPerformException;
-import org.openbase.jul.exception.NotAvailableException;
 import org.openbase.jul.exception.printer.ExceptionPrinter;
 import org.openbase.jul.iface.Shutdownable;
 import org.openbase.jul.pattern.provider.DataProvider;
@@ -19,9 +17,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.lang.reflect.Method;
-import java.lang.reflect.Parameter;
 import java.lang.reflect.ParameterizedType;
-import java.lang.reflect.Type;
 import java.util.*;
 import java.util.concurrent.Future;
 
@@ -77,7 +73,7 @@ public class Generator {
                 ((Map<String, Object>) apiDefinition.get("paths")).put(entry.getKey(), entry.getValue());
             }
 
-            try(FileWriter fileWriter = new FileWriter(file)) {
+            try (FileWriter fileWriter = new FileWriter(file)) {
                 fileWriter.write(yaml.dump(apiDefinition));
             }
         } catch (Exception ex) {
@@ -143,6 +139,7 @@ public class Generator {
             final Map<String, Object> properties = addObject("properties", schema);
 
             for (final Class parameter : method.getParameterTypes()) {
+                //TODO: validate param only appears once
                 addType(addObject(getParameterName(parameter, method.getName()), properties), parameter);
             }
         } else {
@@ -162,6 +159,7 @@ public class Generator {
     private static void addResponse(final Map<String, Object> methodTypeMap, final Method method) throws CouldNotPerformException {
         final Map<String, Object> responses = addObject("responses", methodTypeMap);
         final Map<String, Object> response200 = addObject("200", responses);
+        response200.put("description", "success");
         final Map<String, Object> content = addObject("content", response200);
         final Map<String, Object> applicationJson = addObject("application/json", content);
         final Map<String, Object> schema = addObject("schema", applicationJson);

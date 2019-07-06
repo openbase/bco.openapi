@@ -1,0 +1,847 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ede18f3b-63ca-43da-8160-17e86a63915e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__com_googlecode_javaewah_JavaEWAH_1_1_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__com_jcraft_jsch_0_1_54.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__com_jcraft_jzlib_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_eclipse_jgit_org_eclipse_jgit_5_1_7_201904200442_r.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api/bco-openapi.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../api/bco-openapi.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__com_sun_xml_bind_jaxb_core_2_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__com_sun_xml_bind_jaxb_impl_2_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_bco_authentication_core_2_0_SNAPSHOT.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_bco_authentication_lib_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_bco_authentication_lib_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_bco_dal_lib_2_0_SNAPSHOT.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_bco_dal_remote_2_0_SNAPSHOT.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_bco_registry_activity_core_2_0_SNAPSHOT.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_bco_registry_activity_lib_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_bco_registry_activity_lib_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_bco_registry_activity_remote_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_bco_registry_activity_remote_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_bco_registry_class_core_2_0_SNAPSHOT.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_bco_registry_class_lib_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_bco_registry_class_lib_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_bco_registry_class_remote_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_bco_registry_class_remote_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_bco_registry_remote_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_bco_registry_remote_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_bco_registry_template_core_2_0_SNAPSHOT.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_bco_registry_template_lib_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_bco_registry_template_lib_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_bco_registry_template_remote_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_bco_registry_template_remote_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_bco_registry_unit_core_2_0_SNAPSHOT.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_bco_registry_unit_lib_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_bco_registry_unit_lib_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_bco_registry_unit_remote_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_bco_registry_unit_remote_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_bco_registry_util_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_bco_registry_lib_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jps_3_4_14_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jps_3_4_13.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jul_annotation_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jul_annotation_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jul_communication_controller_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jul_communication_controller_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jul_exception_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jul_exception_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jul_extension_protobuf_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jul_extension_protobuf_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jul_extension_rsb_com_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jul_extension_rsb_com_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jul_extension_rsb_container_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jul_extension_rsb_container_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jul_extension_rsb_interface_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jul_extension_rsb_interface_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jul_extension_rsb_processing_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jul_extension_rsb_processing_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jul_extension_rsb_scope_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jul_extension_rsb_scope_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jul_extension_rsb_util_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jul_extension_rsb_util_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jul_extension_type_interface_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jul_extension_type_interface_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jul_extension_type_processing_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jul_extension_type_processing_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jul_extension_type_storage_2_0_SNAPSHOT.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jul_extension_type_transform_2_0_SNAPSHOT.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jul_extension_type_util_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jul_extension_type_util_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jul_interface_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jul_interface_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jul_pattern_controller_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jul_pattern_controller_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jul_pattern_launch_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jul_pattern_launch_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jul_pattern_trigger_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jul_pattern_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jul_processing_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jul_processing_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jul_processing_json_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jul_processing_json_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jul_schedule_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jul_schedule_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jul_storage_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_jul_storage_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_rct_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_rct_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_type_1_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/.idea/libraries/Maven__org_openbase_type_1_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/src/main/java/io/swagger/api/ApiException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/src/main/java/io/swagger/api/ApiException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/src/main/java/io/swagger/api/ApiOriginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/src/main/java/io/swagger/api/ApiOriginFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/src/main/java/io/swagger/api/ApiResponseMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/src/main/java/io/swagger/api/ApiResponseMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/src/main/java/io/swagger/api/LightApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/src/main/java/io/swagger/api/LightApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/src/main/java/io/swagger/api/LightApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/src/main/java/io/swagger/api/LightApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/src/main/java/io/swagger/api/NotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/src/main/java/io/swagger/api/NotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/src/main/java/io/swagger/configuration/SwaggerDocumentationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/src/main/java/io/swagger/configuration/SwaggerDocumentationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/src/main/java/io/swagger/model/LightData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/src/main/java/io/swagger/model/LightData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-spring/src/main/java/io/swagger/model/PowerState.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client-spring/src/main/java/io/swagger/model/PowerState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../method-generator/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../method-generator/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_10_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_10_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_bco_authentication_lib_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_bco_authentication_lib_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_bco_registry_activity_lib_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_bco_registry_activity_lib_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_bco_registry_activity_remote_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_bco_registry_activity_remote_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_bco_registry_class_lib_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_bco_registry_class_lib_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_bco_registry_class_remote_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_bco_registry_class_remote_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_bco_registry_lib_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_bco_registry_lib_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_bco_registry_remote_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_bco_registry_remote_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_bco_registry_template_lib_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_bco_registry_template_lib_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_bco_registry_template_remote_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_bco_registry_template_remote_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_bco_registry_unit_lib_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_bco_registry_unit_lib_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_bco_registry_unit_remote_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_bco_registry_unit_remote_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_jul_annotation_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_jul_annotation_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_jul_communication_controller_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_jul_communication_controller_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_jul_exception_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_jul_exception_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_jul_extension_protobuf_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_jul_extension_protobuf_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_jul_extension_rsb_com_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_jul_extension_rsb_com_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_jul_extension_rsb_container_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_jul_extension_rsb_container_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_jul_extension_rsb_interface_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_jul_extension_rsb_interface_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_jul_extension_rsb_processing_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_jul_extension_rsb_processing_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_jul_extension_rsb_scope_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_jul_extension_rsb_scope_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_jul_extension_rsb_util_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_jul_extension_rsb_util_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_jul_extension_type_interface_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_jul_extension_type_interface_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_jul_extension_type_processing_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_jul_extension_type_processing_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_jul_extension_type_util_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_jul_extension_type_util_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_jul_interface_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_jul_interface_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_jul_pattern_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_jul_pattern_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_jul_pattern_controller_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_jul_pattern_controller_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_jul_pattern_launch_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_jul_pattern_launch_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_jul_processing_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_jul_processing_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_jul_processing_json_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_jul_processing_json_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_jul_schedule_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_jul_schedule_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_jul_storage_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_jul_storage_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_rct_2_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_rct_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_type_1_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../method-generator/.idea/libraries/Maven__org_openbase_type_1_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../method-generator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../method-generator/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../method-generator/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../method-generator/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../method-generator/src/main/java/org/openbase/bco/api/generator/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../method-generator/src/main/java/org/openbase/bco/api/generator/Generator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/api/LightApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/api/LightApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/api/LightApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/api/LightApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/configuration/OpenAPIDocumentationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/configuration/OpenAPIDocumentationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/LightData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/LightData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseActionDescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseActionDescription.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseActionInitiator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseActionInitiator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseActionParameter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseActionParameter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseActionReference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseActionReference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseActionState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseActionState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseActionStateMapFieldEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseActionStateMapFieldEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseActivationState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseActivationState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseActivationStateMapFieldEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseActivationStateMapFieldEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseActivityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseActivityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseActivityConfigMapFieldEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseActivityConfigMapFieldEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseActivityMultiState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseActivityMultiState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseActivityRegistryData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseActivityRegistryData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseActivityState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseActivityState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseActivityTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseActivityTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseAgentClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseAgentClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseAgentConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseAgentConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseAgentData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseAgentData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseAlarmState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseAlarmState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseAlarmStateMapFieldEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseAlarmStateMapFieldEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseAppClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseAppClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseAppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseAppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseAppData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseAppData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseAudioSourceData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseAudioSourceData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseAuthToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseAuthToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseAuthenticatedValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseAuthenticatedValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseAuthenticationToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseAuthenticationToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseAuthenticator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseAuthenticator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseAuthorizationGroupConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseAuthorizationGroupConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseAuthorizationGroupData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseAuthorizationGroupData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseAuthorizationToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseAuthorizationToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseAuthorizationTokenPermissionRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseAuthorizationTokenPermissionRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseAvailabilityState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseAvailabilityState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseAvailabilityStateMapFieldEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseAvailabilityStateMapFieldEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseAxisAlignedBoundingBox3DFloat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseAxisAlignedBoundingBox3DFloat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseBatteryData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseBatteryData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseBatteryState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseBatteryState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseBatteryStateMapFieldEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseBatteryStateMapFieldEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseBindingConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseBindingConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseBlindState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseBlindState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseBlindStateMapFieldEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseBlindStateMapFieldEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseBrightnessState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseBrightnessState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseButtonData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseButtonData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseButtonState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseButtonState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseButtonStateMapFieldEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseButtonStateMapFieldEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseClassRegistryData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseClassRegistryData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseColor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseColorState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseColorState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseColorableLightData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseColorableLightData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseConnectionConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseConnectionConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseConnectionData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseConnectionData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseConnectionState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseConnectionState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseConnectionStateMapFieldEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseConnectionStateMapFieldEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseContactState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseContactState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseContactStateMapFieldEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseContactStateMapFieldEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseDeviceClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseDeviceClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseDeviceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseDeviceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseDeviceData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseDeviceData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseDimmableLightData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseDimmableLightData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseDimmerData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseDimmerData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseDisplayData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseDisplayData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseDoorState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseDoorState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseDoorStateMapFieldEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseDoorStateMapFieldEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseEmphasisState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseEmphasisState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseEnablingState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseEnablingState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseEnablingStateMapFieldEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseEnablingStateMapFieldEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseFloorCeilingEdgeIndices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseFloorCeilingEdgeIndices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseFloorModuleState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseFloorModuleState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseFloorModuleStateFloorSegmentState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseFloorModuleStateFloorSegmentState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseFloorState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseFloorState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseFourierDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseFourierDescriptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseFrameTransform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseFrameTransform.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseFrameTransformCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseFrameTransformCollection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseGlobalPositionState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseGlobalPositionState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseHSB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseHSB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseHSBColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseHSBColor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseHandleData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseHandleData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseHandleState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseHandleState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseIlluminanceState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseIlluminanceState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseIncreaseDecreaseHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseIncreaseDecreaseHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseInterval.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseInterval.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseInventoryState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseInventoryState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseInventoryStateMapFieldEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseInventoryStateMapFieldEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseKinectPostureJoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseKinectPostureJoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseKinectPostureJointPair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseKinectPostureJointPair.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseLabel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseLabel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseLabelMapFieldEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseLabelMapFieldEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseLauncherData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseLauncherData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseLightData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseLightData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseLightSensorData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseLightSensorData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseLocalPositionState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseLocalPositionState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseLocationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseLocationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseLocationData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseLocationData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseLoginCredentials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseLoginCredentials.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseLoginCredentialsChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseLoginCredentialsChange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseLoginCredentialsCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseLoginCredentialsCollection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseLoginCredentialsEncoded.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseLoginCredentialsEncoded.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseLoginCredentialsEncodedCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseLoginCredentialsEncodedCollection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseMetaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseMetaConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseMonitorData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseMonitorData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseMotionDetectorData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseMotionDetectorData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseMotionState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseMotionState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseMotionStateMapFieldEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseMotionStateMapFieldEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseMultiLanguageText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseMultiLanguageText.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseMultiLanguageTextMapFieldEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseMultiLanguageTextMapFieldEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseMultiResourceAllocationStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseMultiResourceAllocationStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseObjectConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseObjectConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseObjectData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseObjectData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseObjectID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseObjectID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseOnOffHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseOnOffHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseOntologyChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseOntologyChange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseOpenClosedHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseOpenClosedHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseOpenhabCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseOpenhabCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseOperationMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseOperationMode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbasePanTiltAngle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbasePanTiltAngle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbasePassageState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbasePassageState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbasePercent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbasePercent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbasePermission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbasePermission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbasePermissionConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbasePermissionConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbasePermissionConfigMapFieldEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbasePermissionConfigMapFieldEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbasePlacementConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbasePlacementConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbasePointingRay3DFloat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbasePointingRay3DFloat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbasePointingRay3DFloatCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbasePointingRay3DFloatCollection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbasePointingRay3DFloatDistribution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbasePointingRay3DFloatDistribution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbasePointingRay3DFloatDistributionCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbasePointingRay3DFloatDistributionCollection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbasePose.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbasePose.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbasePosture3DFloat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbasePosture3DFloat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbasePowerConsumptionSensorData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbasePowerConsumptionSensorData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbasePowerConsumptionState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbasePowerConsumptionState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbasePowerState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbasePowerState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbasePowerStateMapFieldEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbasePowerStateMapFieldEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbasePowerSwitchData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbasePowerSwitchData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbasePresenceState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbasePresenceState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbasePresenceStateMapFieldEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbasePresenceStateMapFieldEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseRFIDData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseRFIDData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseRFIDState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseRFIDState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseRGBColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseRGBColor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseRay3DFloat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseRay3DFloat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseReedContactData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseReedContactData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseRollerShutterData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseRollerShutterData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseRotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseRotation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseSceneConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseSceneConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseSceneData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseSceneData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseScope.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseScope.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseServiceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseServiceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseServiceDescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseServiceDescription.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseServiceStateDescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseServiceStateDescription.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseServiceTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseServiceTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseServiceTemplateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseServiceTemplateConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseShape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseSmokeDetectorData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseSmokeDetectorData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseSmokeState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseSmokeState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseSmokeStateMapFieldEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseSmokeStateMapFieldEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseSnapshot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseSnapshot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseStandbyState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseStandbyState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseStandbyStateMapFieldEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseStandbyStateMapFieldEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseStates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseStates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseStopMoveHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseStopMoveHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseSwitchData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseSwitchData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseSwitchState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseSwitchState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseTamperDetectorData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseTamperDetectorData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseTamperState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseTamperState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseTamperStateMapFieldEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseTamperStateMapFieldEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseTelevisionData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseTelevisionData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseTemperatureControllerData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseTemperatureControllerData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseTemperatureSensorData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseTemperatureSensorData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseTemperatureState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseTemperatureState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseTemplateRegistryData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseTemplateRegistryData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseTicket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseTicketAuthenticatorWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseTicketAuthenticatorWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseTicketSessionKeyWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseTicketSessionKeyWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseTileConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseTileConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseTimestamp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseTimestamp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseTrackedPosture3DFloat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseTrackedPosture3DFloat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseTrackedPostures3DFloat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseTrackedPostures3DFloat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseTrackingInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseTrackingInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseTransactionValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseTransactionValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseTranslation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseTranslation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseTriggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseTriggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseUnitConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseUnitConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseUnitGroupConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseUnitGroupConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseUnitGroupData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseUnitGroupData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseUnitProbability.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseUnitProbability.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseUnitProbabilityCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseUnitProbabilityCollection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseUnitRegistryData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseUnitRegistryData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseUnitTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseUnitTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseUnitTemplateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseUnitTemplateConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseUpDownHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseUpDownHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseUserClientPair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseUserClientPair.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseUserConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseUserConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseUserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseUserData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseUserMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseUserMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseUserTransitState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseUserTransitState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseUserTransitStateMapFieldEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseUserTransitStateMapFieldEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseVec3DDouble.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseVec3DDouble.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseVec3DFloat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseVec3DFloat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseVideoDepthSourceData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseVideoDepthSourceData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseVideoRgbSourceData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseVideoRgbSourceData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseWindowState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseWindowState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseWindowStateMapFieldEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseWindowStateMapFieldEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/openapitools/model/PowerState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/openapitools/model/PowerState.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/classes/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/openapitools/api/LightApi.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="56" selection-start-line="56" selection-end-line="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/openapitools/api/RegistryApi.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-6875">
+              <caret line="283" column="39" selection-start-line="283" selection-start-column="27" selection-end-line="283" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/openapitools/api/LightApiController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseServiceTemplateServiceType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="697">
+              <caret line="47" column="13" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="13" />
+              <folding>
+                <element signature="e#2675#2676#0" expanded="true" />
+                <element signature="e#2713#2714#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/openapitools/OpenAPI2SpringBoot.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/openapitools/model/InlineObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/openapitools/model/LightData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseActionDescription.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.5.RELEASE/spring-web-5.0.5.RELEASE.jar!/org/springframework/http/ResponseEntity.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/openapitools/api/RegistryApiController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>getServiceTemplates</find>
+      <find>ALARM</find>
+      <find>getWri</find>
+      <find>getServiceTemplateBy</find>
+      <find>ById</find>
+      <find>getServiceTemplateByTy</find>
+      <find>getServiceTemplateById</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/org/openapitools/api/LightApi.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/openapitools/api/RegistryApiController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/openapitools/api/RegistryApi.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/encodings.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_5.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_5.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_5.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_5.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_5.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_20_0.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_2_8_0.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_2_8_0.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_2_8_0.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_8_0.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_8_0.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_8_0.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_2_8_0.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_14.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_14.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_7_11.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_10_0.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_10_0.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_29.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_29.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_29.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_9_Final.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_21_0_GA.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_2_0_Final.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openapitools_jackson_databind_nullable_0_1_0.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_reflections_reflections_0_9_11.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_0_1_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_0_1_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_0_1_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_0_1_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_0_1_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_0_1_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_0_1_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_0_5_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_5_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_5_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_0_5_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_0_5_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_5_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_0_5_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_5_RELEASE.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_19.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jnr_jffi_1_2_11.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jnr_jffi_native_1_2_11.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jnr_jnr_ffi_2_0_9.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jnr_jnr_x86asm_1_0_2.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_2.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_0_2.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_javaewah_JavaEWAH_1_1_6.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_protobuf_java_format_protobuf_java_format_1_4.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_jcraft_jsch_0_1_54.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_jcraft_jzlib_1_1_1.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__java3d_j3d_core_1_3_1.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__java3d_vecmath_1_3_1.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_7.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_math3_3_6_1.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jgit_org_eclipse_jgit_5_1_7_201904200442_r.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_fusesource_jansi_jansi_1_18.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_1.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openbase_bco_authentication_lib_2_0_SNAPSHOT.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openbase_bco_registry_activity_lib_2_0_SNAPSHOT.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openbase_bco_registry_activity_remote_2_0_SNAPSHOT.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openbase_bco_registry_class_lib_2_0_SNAPSHOT.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openbase_bco_registry_class_remote_2_0_SNAPSHOT.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openbase_bco_registry_lib_2_0_SNAPSHOT.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openbase_bco_registry_remote_2_0_SNAPSHOT.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openbase_bco_registry_template_lib_2_0_SNAPSHOT.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openbase_bco_registry_template_remote_2_0_SNAPSHOT.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openbase_bco_registry_unit_lib_2_0_SNAPSHOT.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openbase_bco_registry_unit_remote_2_0_SNAPSHOT.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openbase_jps_3_4_13.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openbase_jul_annotation_2_0_SNAPSHOT.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openbase_jul_communication_controller_2_0_SNAPSHOT.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openbase_jul_exception_2_0_SNAPSHOT.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openbase_jul_extension_protobuf_2_0_SNAPSHOT.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openbase_jul_extension_rsb_com_2_0_SNAPSHOT.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openbase_jul_extension_rsb_container_2_0_SNAPSHOT.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openbase_jul_extension_rsb_interface_2_0_SNAPSHOT.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openbase_jul_extension_rsb_processing_2_0_SNAPSHOT.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openbase_jul_extension_rsb_scope_2_0_SNAPSHOT.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openbase_jul_extension_rsb_util_2_0_SNAPSHOT.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openbase_jul_extension_type_interface_2_0_SNAPSHOT.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openbase_jul_extension_type_processing_2_0_SNAPSHOT.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openbase_jul_extension_type_util_2_0_SNAPSHOT.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openbase_jul_interface_2_0_SNAPSHOT.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openbase_jul_pattern_2_0_SNAPSHOT.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openbase_jul_pattern_controller_2_0_SNAPSHOT.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openbase_jul_pattern_launch_2_0_SNAPSHOT.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openbase_jul_processing_2_0_SNAPSHOT.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openbase_jul_processing_json_2_0_SNAPSHOT.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openbase_jul_schedule_2_0_SNAPSHOT.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openbase_jul_storage_2_0_SNAPSHOT.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openbase_rct_2_0_SNAPSHOT.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_openbase_type_1_0_SNAPSHOT.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_3.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_analysis_5_0_3.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_commons_5_0_3.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_tree_5_0_3.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_util_5_0_3.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__rsb_rsb_0_18_4.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__uk_com_robust_it_cloning_1_9_2.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_0.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="240" />
+    <option name="y" value="158" />
+    <option name="width" value="1440" />
+    <option name="height" value="791" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="openapi-spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server-spring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="openapi-spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server-spring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="openapi-spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server-spring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="openapi-spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server-spring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="openapi-spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server-spring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="openapitools" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="openapi-spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server-spring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="openapitools" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="OpenAPI2SpringBoot" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="openapi-spring" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.openapitools.OpenAPI2SpringBoot" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ede18f3b-63ca-43da-8160-17e86a63915e" name="Default Changelist" comment="" />
+      <created>1560779262108</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1560779262108</updated>
+      <workItem from="1560779263335" duration="2356000" />
+      <workItem from="1560866363452" duration="3087000" />
+      <workItem from="1560951732829" duration="2534000" />
+      <workItem from="1561123670192" duration="614000" />
+      <workItem from="1562400662680" duration="2461000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="11052000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18943436" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35529158" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32991612" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar!/com/fasterxml/jackson/annotation/JsonFormat.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1241">
+          <caret line="73" column="21" selection-start-line="73" selection-start-column="21" selection-end-line="73" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/openbase/type/1.0-SNAPSHOT/type-1.0-20190617.125649-66.jar!/org/openbase/type/domotic/service/ServiceTemplateType.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1040">
+          <caret line="1194" column="27" selection-start-line="1194" selection-start-column="27" selection-end-line="1194" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/openapitools/api/LightApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/openapitools/api/LightApiController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseServiceTemplateServiceType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="47" column="13" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="13" />
+          <folding>
+            <element signature="e#2675#2676#0" expanded="true" />
+            <element signature="e#2713#2714#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/openapitools/OpenAPI2SpringBoot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/openapitools/model/InlineObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/openapitools/model/LightData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/openapitools/model/OpenbaseActionDescription.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.5.RELEASE/spring-web-5.0.5.RELEASE.jar!/org/springframework/http/ResponseEntity.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/openapitools/api/RegistryApiController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/openapitools/api/RegistryApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6875">
+          <caret line="283" column="39" selection-start-line="283" selection-start-column="27" selection-end-line="283" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

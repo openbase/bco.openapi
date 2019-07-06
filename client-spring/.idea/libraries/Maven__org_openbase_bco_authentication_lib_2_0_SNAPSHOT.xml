@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.openbase:bco.authentication.lib:2.0-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/bco.authentication.lib/2.0-SNAPSHOT/bco.authentication.lib-2.0-SNAPSHOT.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/bco.authentication.lib/2.0-SNAPSHOT/bco.authentication.lib-2.0-20190617.172347-247.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/bco.authentication.lib/2.0-SNAPSHOT/bco.authentication.lib-2.0-SNAPSHOT-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/bco.authentication.lib/2.0-SNAPSHOT/bco.authentication.lib-2.0-20190617.172347-247-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/bco.authentication.lib/2.0-SNAPSHOT/bco.authentication.lib-2.0-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/bco.authentication.lib/2.0-SNAPSHOT/bco.authentication.lib-2.0-20190617.172347-247-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
