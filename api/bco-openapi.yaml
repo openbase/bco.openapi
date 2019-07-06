@@ -1,11 +1,5 @@
 components:
   schemas:
-    LightData:
-      properties:
-        id:
-          type: string
-        power_state:
-          $ref: '#/components/schemas/PowerState'
     OpenbaseActionDescription:
       properties:
         action_cause:
@@ -3531,11 +3525,6 @@ components:
       - OPEN
       - TILTED
       type: string
-    PowerState:
-      properties:
-        value:
-          example: true
-          type: string
 info:
   description: Optional multiline or single-line description in [CommonMark](http://commonmark.org/help/)
     or HTML.
@@ -3543,31 +3532,6 @@ info:
   version: 0.1.9
 openapi: 3.0.0
 paths:
-  /light:
-    get:
-      responses:
-        '200':
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/LightData'
-          description: A light data object.
-        default:
-          description: Unexpected error
-      summary: Returns the light unit data.
-    post:
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/LightData'
-        required: true
-      responses:
-        '201':
-          description: Set successful.
-        default:
-          description: Unexpected error
-      summary: Set the light unit data.
   /registry/template/getSuperServiceTypes:
     post:
       requestBody:
