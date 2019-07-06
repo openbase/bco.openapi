@@ -2,7 +2,10 @@ package org.openbase.bco.api.generator;
 
 import com.google.protobuf.Message;
 import com.google.protobuf.ProtocolMessageEnum;
+import org.openbase.bco.registry.activity.lib.ActivityRegistry;
+import org.openbase.bco.registry.clazz.lib.ClassRegistry;
 import org.openbase.bco.registry.template.lib.TemplateRegistry;
+import org.openbase.bco.registry.unit.lib.UnitRegistry;
 import org.openbase.jul.exception.CouldNotPerformException;
 import org.openbase.jul.exception.printer.ExceptionPrinter;
 import org.openbase.jul.iface.Shutdownable;
@@ -17,6 +20,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.lang.reflect.Method;
+import java.lang.reflect.Parameter;
 import java.lang.reflect.ParameterizedType;
 import java.util.*;
 import java.util.concurrent.Future;
@@ -73,9 +77,22 @@ public class Generator {
                 ((Map<String, Object>) apiDefinition.get("paths")).put(entry.getKey(), entry.getValue());
             }
 
+            for (Map.Entry<String, Object> entry : parseRegistryMethods(ClassRegistry.class).entrySet()) {
+                ((Map<String, Object>) apiDefinition.get("paths")).put(entry.getKey(), entry.getValue());
+            }
+
+            for (Map.Entry<String, Object> entry : parseRegistryMethods(UnitRegistry.class).entrySet()) {
+                ((Map<String, Object>) apiDefinition.get("paths")).put(entry.getKey(), entry.getValue());
+            }
+
+            for (Map.Entry<String, Object> entry : parseRegistryMethods(ActivityRegistry.class).entrySet()) {
+                ((Map<String, Object>) apiDefinition.get("paths")).put(entry.getKey(), entry.getValue());
+            }
+
             try (FileWriter fileWriter = new FileWriter(file)) {
                 fileWriter.write(yaml.dump(apiDefinition));
             }
+            //System.out.println(yaml.dump(parseRegistryMethods(TemplateRegistry.class)));
         } catch (Exception ex) {
             ExceptionPrinter.printHistory(ex, LOGGER);
         }
@@ -96,17 +113,28 @@ public class Generator {
         final String pathPrefix = "/registry/" + registryInterface.getSimpleName().toLowerCase().replace("registry", "");
 
         final Set<String> methodNameSet = new HashSet<>();
-        for (Method method : registryInterface.getMethods()) {
+        for (final Method method : registryInterface.getMethods()) {
             if (methodsToIgnore.contains(method)) {
                 continue;
             }
 
-            if (methodNameSet.contains(method.getName())) {
-                throw new CouldNotPerformException("Could not add method[" + method.getName() + "] for [" + registryInterface.getSimpleName() + "] because method with same name is defined more than once!");
+            // skip deprecated methods
+            if (method.getAnnotation(Deprecated.class) != null) {
+                continue;
             }
+
+            //TODO: reactivate check after removal of duplicated registry methods
+            if (methodNameSet.contains(method.getName())) {
+                //throw new CouldNotPerformException("Could not add method[" + method.getName() + "] for [" + registryInterface.getSimpleName() + "] because method with same name is defined more than once!");
+            }
+
             methodNameSet.add(method.getName());
 
-            addMethodEntry(result, method, pathPrefix);
+            try {
+                addMethodEntry(result, method, pathPrefix);
+            } catch (CouldNotPerformException ex) {
+                LOGGER.warn("Skip adding method["+method.getName()+"]", ex);
+            }
         }
 
         return result;
@@ -133,46 +161,48 @@ public class Generator {
         final Map<String, Object> content = addObject("content", requestBody);
         final Map<String, Object> applicationJson = addObject("application/json", content);
         final Map<String, Object> schema = addObject("schema", applicationJson);
-
-        if (method.getParameters().length > 1) {
-            schema.put("type", "object");
-            final Map<String, Object> properties = addObject("properties", schema);
-
-            for (final Class parameter : method.getParameterTypes()) {
-                //TODO: validate param only appears once
-                addType(addObject(getParameterName(parameter, method.getName()), properties), parameter);
+        schema.put("type", "object");
+        Map<String, Object> properties = addObject("properties", schema);
+        for (final Parameter parameter : method.getParameters()) {
+            try {
+                if (parameter.getType().isArray()) {
+                    Map<String, Object> stringObjectMap = addObject(parameter.getName(), properties);
+                    stringObjectMap.put("type", "array");
+                    addType(addObject("items", stringObjectMap), parameter.getType().getComponentType());
+                } else if (parameter.getType().equals(List.class) || parameter.getType().equals(Set.class)) {
+                    Map<String, Object> stringObjectMap = addObject(parameter.getName(), properties);
+                    stringObjectMap.put("type", "array");
+                    addType(addObject("items", stringObjectMap), (Class) ((ParameterizedType) parameter.getParameterizedType()).getActualTypeArguments()[0]);
+                } else {
+                    addType(addObject(parameter.getName(), properties), parameter.getType());
+                }
+            } catch (CouldNotPerformException ex) {
+                throw new CouldNotPerformException("Could not add parameter[" + parameter + "] to method[" + method.getName() + "]");
             }
-        } else {
-            addType(schema, method.getParameterTypes()[0]);
         }
-    }
-
-    private static String getParameterName(final Class parameter, final String methodName) {
-        if (parameter.getClasses().equals(String.class)) {
-            if (methodName.split("By").length > 1) {
-                return methodName.split("By")[1].substring(0, 1) + methodName.split("By")[1].substring(1);
-            }
-        }
-        return parameter.getSimpleName().substring(0, 1).toLowerCase() + parameter.getSimpleName().substring(1);
     }
 
     private static void addResponse(final Map<String, Object> methodTypeMap, final Method method) throws CouldNotPerformException {
-        final Map<String, Object> responses = addObject("responses", methodTypeMap);
-        final Map<String, Object> response200 = addObject("200", responses);
-        response200.put("description", "success");
-        final Map<String, Object> content = addObject("content", response200);
-        final Map<String, Object> applicationJson = addObject("application/json", content);
-        final Map<String, Object> schema = addObject("schema", applicationJson);
+        try {
+            final Map<String, Object> responses = addObject("responses", methodTypeMap);
+            final Map<String, Object> response200 = addObject("200", responses);
+            response200.put("description", "success");
+            final Map<String, Object> content = addObject("content", response200);
+            final Map<String, Object> applicationJson = addObject("application/json", content);
+            final Map<String, Object> schema = addObject("schema", applicationJson);
 
-        if (method.getReturnType().equals(List.class)) {
-            final Class actualTypeArgument = (Class) ((ParameterizedType) method.getGenericReturnType()).getActualTypeArguments()[0];
-            schema.put("type", "array");
-            addType(addObject("items", schema), actualTypeArgument);
-        } else if (method.getReturnType().equals(Future.class)) {
-            final Class actualTypeArgument = (Class) ((ParameterizedType) method.getGenericReturnType()).getActualTypeArguments()[0];
-            addType(schema, actualTypeArgument);
-        } else {
-            addType(schema, method.getReturnType());
+            if (method.getReturnType().equals(List.class) || method.getReturnType().equals(Set.class)) {
+                final Class actualTypeArgument = (Class) ((ParameterizedType) method.getGenericReturnType()).getActualTypeArguments()[0];
+                schema.put("type", "array");
+                addType(addObject("items", schema), actualTypeArgument);
+            } else if (method.getReturnType().equals(Future.class)) {
+                final Class actualTypeArgument = (Class) ((ParameterizedType) method.getGenericReturnType()).getActualTypeArguments()[0];
+                addType(schema, actualTypeArgument);
+            } else {
+                addType(schema, method.getReturnType());
+            }
+        } catch (CouldNotPerformException ex) {
+            throw new CouldNotPerformException("Could not add response of method[" + method.getName() + "]", ex);
         }
     }
 
@@ -186,7 +216,14 @@ public class Generator {
         return Message.class.isAssignableFrom(clazz) || ProtocolMessageEnum.class.isAssignableFrom(clazz);
     }
 
+    private static boolean isSupportedType(final Class clazz) {
+        return isReferencedType(clazz) || clazz.equals(String.class) || clazz.equals(Boolean.class) || clazz.equals(boolean.class);
+    }
+
     private static void addType(final Map<String, Object> objectToAddTo, final Class type) throws CouldNotPerformException {
+        if (!isSupportedType(type)) {
+            throw new CouldNotPerformException("Type[" + type.getName() + "] is not supported");
+        }
         final String key = isReferencedType(type) ? "$ref" : "type";
         objectToAddTo.put(key, resolveType(type));
     }
