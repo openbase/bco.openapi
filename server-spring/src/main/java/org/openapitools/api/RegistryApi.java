@@ -5,164 +5,23 @@
  */
 package org.openapitools.api;
 
-import org.openapitools.model.InlineObject;
-import org.openapitools.model.InlineObject1;
-import org.openapitools.model.InlineObject10;
-import org.openapitools.model.InlineObject100;
-import org.openapitools.model.InlineObject101;
-import org.openapitools.model.InlineObject102;
-import org.openapitools.model.InlineObject103;
-import org.openapitools.model.InlineObject104;
-import org.openapitools.model.InlineObject105;
-import org.openapitools.model.InlineObject106;
-import org.openapitools.model.InlineObject107;
-import org.openapitools.model.InlineObject108;
-import org.openapitools.model.InlineObject109;
-import org.openapitools.model.InlineObject11;
-import org.openapitools.model.InlineObject110;
-import org.openapitools.model.InlineObject111;
-import org.openapitools.model.InlineObject112;
-import org.openapitools.model.InlineObject113;
-import org.openapitools.model.InlineObject114;
-import org.openapitools.model.InlineObject115;
-import org.openapitools.model.InlineObject116;
-import org.openapitools.model.InlineObject117;
-import org.openapitools.model.InlineObject118;
-import org.openapitools.model.InlineObject119;
-import org.openapitools.model.InlineObject12;
-import org.openapitools.model.InlineObject120;
-import org.openapitools.model.InlineObject121;
-import org.openapitools.model.InlineObject13;
-import org.openapitools.model.InlineObject14;
-import org.openapitools.model.InlineObject15;
-import org.openapitools.model.InlineObject16;
-import org.openapitools.model.InlineObject17;
-import org.openapitools.model.InlineObject18;
-import org.openapitools.model.InlineObject19;
-import org.openapitools.model.InlineObject2;
-import org.openapitools.model.InlineObject20;
-import org.openapitools.model.InlineObject21;
-import org.openapitools.model.InlineObject22;
-import org.openapitools.model.InlineObject23;
-import org.openapitools.model.InlineObject24;
-import org.openapitools.model.InlineObject25;
-import org.openapitools.model.InlineObject26;
-import org.openapitools.model.InlineObject27;
-import org.openapitools.model.InlineObject28;
-import org.openapitools.model.InlineObject29;
-import org.openapitools.model.InlineObject3;
-import org.openapitools.model.InlineObject30;
-import org.openapitools.model.InlineObject31;
-import org.openapitools.model.InlineObject32;
-import org.openapitools.model.InlineObject33;
-import org.openapitools.model.InlineObject34;
-import org.openapitools.model.InlineObject35;
-import org.openapitools.model.InlineObject36;
-import org.openapitools.model.InlineObject37;
-import org.openapitools.model.InlineObject38;
-import org.openapitools.model.InlineObject39;
-import org.openapitools.model.InlineObject4;
-import org.openapitools.model.InlineObject40;
-import org.openapitools.model.InlineObject41;
-import org.openapitools.model.InlineObject42;
-import org.openapitools.model.InlineObject43;
-import org.openapitools.model.InlineObject44;
-import org.openapitools.model.InlineObject45;
-import org.openapitools.model.InlineObject46;
-import org.openapitools.model.InlineObject47;
-import org.openapitools.model.InlineObject48;
-import org.openapitools.model.InlineObject49;
-import org.openapitools.model.InlineObject5;
-import org.openapitools.model.InlineObject50;
-import org.openapitools.model.InlineObject51;
-import org.openapitools.model.InlineObject52;
-import org.openapitools.model.InlineObject53;
-import org.openapitools.model.InlineObject54;
-import org.openapitools.model.InlineObject55;
-import org.openapitools.model.InlineObject56;
-import org.openapitools.model.InlineObject57;
-import org.openapitools.model.InlineObject58;
-import org.openapitools.model.InlineObject59;
-import org.openapitools.model.InlineObject6;
-import org.openapitools.model.InlineObject60;
-import org.openapitools.model.InlineObject61;
-import org.openapitools.model.InlineObject62;
-import org.openapitools.model.InlineObject63;
-import org.openapitools.model.InlineObject64;
-import org.openapitools.model.InlineObject65;
-import org.openapitools.model.InlineObject66;
-import org.openapitools.model.InlineObject67;
-import org.openapitools.model.InlineObject68;
-import org.openapitools.model.InlineObject69;
-import org.openapitools.model.InlineObject7;
-import org.openapitools.model.InlineObject70;
-import org.openapitools.model.InlineObject71;
-import org.openapitools.model.InlineObject72;
-import org.openapitools.model.InlineObject73;
-import org.openapitools.model.InlineObject74;
-import org.openapitools.model.InlineObject75;
-import org.openapitools.model.InlineObject76;
-import org.openapitools.model.InlineObject77;
-import org.openapitools.model.InlineObject78;
-import org.openapitools.model.InlineObject79;
-import org.openapitools.model.InlineObject8;
-import org.openapitools.model.InlineObject80;
-import org.openapitools.model.InlineObject81;
-import org.openapitools.model.InlineObject82;
-import org.openapitools.model.InlineObject83;
-import org.openapitools.model.InlineObject84;
-import org.openapitools.model.InlineObject85;
-import org.openapitools.model.InlineObject86;
-import org.openapitools.model.InlineObject87;
-import org.openapitools.model.InlineObject88;
-import org.openapitools.model.InlineObject89;
-import org.openapitools.model.InlineObject9;
-import org.openapitools.model.InlineObject90;
-import org.openapitools.model.InlineObject91;
-import org.openapitools.model.InlineObject92;
-import org.openapitools.model.InlineObject93;
-import org.openapitools.model.InlineObject94;
-import org.openapitools.model.InlineObject95;
-import org.openapitools.model.InlineObject96;
-import org.openapitools.model.InlineObject97;
-import org.openapitools.model.InlineObject98;
-import org.openapitools.model.InlineObject99;
-import org.openapitools.model.OpenbaseActivityConfig;
-import org.openapitools.model.OpenbaseActivityTemplate;
-import org.openapitools.model.OpenbaseAgentClass;
-import org.openapitools.model.OpenbaseAppClass;
-import org.openapitools.model.OpenbaseAuthenticatedValue;
-import org.openapitools.model.OpenbaseDeviceClass;
-import org.openapitools.model.OpenbaseRotation;
-import org.openapitools.model.OpenbaseServiceConfig;
-import org.openapitools.model.OpenbaseServiceTemplate;
-import org.openapitools.model.OpenbaseServiceTemplateServiceType;
-import org.openapitools.model.OpenbaseShape;
-import org.openapitools.model.OpenbaseTransactionValue;
-import org.openapitools.model.OpenbaseTranslation;
-import org.openapitools.model.OpenbaseUnitConfig;
-import org.openapitools.model.OpenbaseUnitTemplate;
-import org.openapitools.model.OpenbaseUnitTemplateUnitType;
-import org.openapitools.model.OpenbaseVec3DDouble;
 import io.swagger.annotations.*;
+import org.openapitools.model.*;
+import org.openbase.jul.exception.CouldNotPerformException;
+import org.openbase.jul.exception.printer.ExceptionPrinter;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.context.request.NativeWebRequest;
-import org.springframework.web.multipart.MultipartFile;
 
 import javax.validation.Valid;
-import javax.validation.constraints.*;
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 import java.util.Optional;
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2019-07-06T14:31:08.291817+02:00[Europe/Berlin]")
 
@@ -182,8 +41,12 @@ public interface RegistryApi {
         consumes = { "application/json" },
         method = RequestMethod.POST)
     default ResponseEntity<Boolean> registryActivityContainsActivityConfigByIdPost(@ApiParam(value = "" ,required=true )  @Valid @RequestBody InlineObject115 inlineObject115) {
-        return new ResponseEntity<>(HttpStatus.NOT_IMPLEMENTED);
-
+        try {
+            return ResponseEntity.ok(RegisrtyRPCProcessor.invokeMethod(inlineObject115, Boolean.class));
+        } catch (CouldNotPerformException e) {
+            ExceptionPrinter.printHistory(e, LoggerFactory.getLogger(RegistryApi.class));
+            return ResponseEntity.status(500).build();
+        }
     }
 
 
@@ -249,16 +112,13 @@ public interface RegistryApi {
         produces = { "application/json" }, 
         method = RequestMethod.GET)
     default ResponseEntity<List<OpenbaseActivityConfig>> registryActivityGetActivityConfigsGet() {
-        getRequest().ifPresent(request -> {
-            for (MediaType mediaType: MediaType.parseMediaTypes(request.getHeader("Accept"))) {
-                if (mediaType.isCompatibleWith(MediaType.valueOf("application/json"))) {
-                    ApiUtil.setExampleResponse(request, "application/json", "{  \"meta_config\" : {    \"entry\" : [ {      \"value\" : \"value\",      \"key\" : \"key\"    }, {      \"value\" : \"value\",      \"key\" : \"key\"    } ]  },  \"service_state_description\" : [ {    \"service_state\" : \"service_state\",    \"service_state_class_name\" : \"service_state_class_name\",    \"unit_id\" : \"unit_id\"  }, {    \"service_state\" : \"service_state\",    \"service_state_class_name\" : \"service_state_class_name\",    \"unit_id\" : \"unit_id\"  } ],  \"description\" : {    \"entry\" : [ {      \"value\" : \"value\",      \"key\" : \"key\"    }, {      \"value\" : \"value\",      \"key\" : \"key\"    } ]  },  \"activity_template_id\" : \"activity_template_id\",  \"id\" : \"id\",  \"individual_service_state_description\" : [ {    \"value\" : [ {      \"service_state\" : \"service_state\",      \"service_state_class_name\" : \"service_state_class_name\",      \"unit_id\" : \"unit_id\"    }, {      \"service_state\" : \"service_state\",      \"service_state_class_name\" : \"service_state_class_name\",      \"unit_id\" : \"unit_id\"    } ],    \"key\" : \"key\"  }, {    \"value\" : [ {      \"service_state\" : \"service_state\",      \"service_state_class_name\" : \"service_state_class_name\",      \"unit_id\" : \"unit_id\"    }, {      \"service_state\" : \"service_state\",      \"service_state_class_name\" : \"service_state_class_name\",      \"unit_id\" : \"unit_id\"    } ],    \"key\" : \"key\"  } ],  \"label\" : {    \"entry\" : [ {      \"value\" : [ \"value\", \"value\" ],      \"key\" : \"key\"    }, {      \"value\" : [ \"value\", \"value\" ],      \"key\" : \"key\"    } ]  }}");
-                    break;
-                }
-            }
-        });
-        return new ResponseEntity<>(HttpStatus.NOT_IMPLEMENTED);
-
+        class ReturnClass extends ArrayList<OpenbaseActivityConfig>{};
+        try {
+            return ResponseEntity.ok(RegisrtyRPCProcessor.invokeMethod(null, new ReturnClass().getClass()));
+        } catch (Exception e) {
+            ExceptionPrinter.printHistory(e, LoggerFactory.getLogger(RegistryApi.class));
+            return ResponseEntity.status(500).build();
+        }
     }
 
 
