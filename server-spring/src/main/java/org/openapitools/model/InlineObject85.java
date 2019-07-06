@@ -5,6 +5,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import java.util.ArrayList;
+import java.util.List;
 import org.openapitools.model.OpenbaseServiceTemplateServiceType;
 import org.openapitools.model.OpenbaseUnitTemplateUnitType;
 import org.openapitools.jackson.nullable.JsonNullable;
@@ -14,17 +16,26 @@ import javax.validation.constraints.*;
 /**
  * InlineObject85
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2019-07-06T14:31:08.291817+02:00[Europe/Berlin]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2019-07-06T17:42:17.060512+02:00[Europe/Berlin]")
 
 public class InlineObject85   {
   @JsonProperty("arg1")
-  private OpenbaseServiceTemplateServiceType arg1;
+  @Valid
+  private List<OpenbaseServiceTemplateServiceType> arg1 = null;
 
   @JsonProperty("arg0")
   private OpenbaseUnitTemplateUnitType arg0;
 
-  public InlineObject85 arg1(OpenbaseServiceTemplateServiceType arg1) {
+  public InlineObject85 arg1(List<OpenbaseServiceTemplateServiceType> arg1) {
     this.arg1 = arg1;
+    return this;
+  }
+
+  public InlineObject85 addArg1Item(OpenbaseServiceTemplateServiceType arg1Item) {
+    if (this.arg1 == null) {
+      this.arg1 = new ArrayList<>();
+    }
+    this.arg1.add(arg1Item);
     return this;
   }
 
@@ -36,11 +47,11 @@ public class InlineObject85   {
 
   @Valid
 
-  public OpenbaseServiceTemplateServiceType getArg1() {
+  public List<OpenbaseServiceTemplateServiceType> getArg1() {
     return arg1;
   }
 
-  public void setArg1(OpenbaseServiceTemplateServiceType arg1) {
+  public void setArg1(List<OpenbaseServiceTemplateServiceType> arg1) {
     this.arg1 = arg1;
   }
 

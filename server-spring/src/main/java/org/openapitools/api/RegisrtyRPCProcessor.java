@@ -125,7 +125,7 @@ public class RegisrtyRPCProcessor {
     public static <T> T convertReturnValue(final Object returnValue, final Class<T> returnClass) throws CouldNotPerformException {
         if (Message.class.isAssignableFrom(returnValue.getClass())) {
             try {
-                
+
                 return OBJECT_MAPPER.readValue(JSON_FORMAT.printToString((Message) returnValue), returnClass);
             } catch (IOException e) {
                 throw new CouldNotPerformException("Could not convert value of type[" + returnValue.getClass().getSimpleName() + "] to type[" + returnClass.getSimpleName() + "]");

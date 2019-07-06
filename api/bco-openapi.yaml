@@ -6555,9 +6555,19 @@ paths:
             schema:
               type: object
               properties:
-                arg1: {}
+                arg1:
+                  type: double
                 arg0:
                   $ref: '#/components/schemas/OpenbaseVec3DDouble'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
   /registry/unit/getUnitConfigsByLocationIdRecursive:
     post:
       requestBody:
@@ -6609,9 +6619,21 @@ paths:
             schema:
               type: object
               properties:
-                arg1: {}
+                arg2:
+                  $ref: '#/components/schemas/OpenbaseUnitTemplate.UnitType'
+                arg1:
+                  type: double
                 arg0:
                   $ref: '#/components/schemas/OpenbaseVec3DDouble'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OpenbaseUnitConfig'
   /registry/unit/getUnitConfigsByLocationIdAndUnitType:
     post:
       requestBody:

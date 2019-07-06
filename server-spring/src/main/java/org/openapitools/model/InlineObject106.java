@@ -5,7 +5,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import org.openapitools.model.OpenbaseUnitTemplateUnitType;
 import org.openapitools.jackson.nullable.JsonNullable;
 import javax.validation.Valid;
 import javax.validation.constraints.*;
@@ -13,35 +12,11 @@ import javax.validation.constraints.*;
 /**
  * InlineObject106
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2019-07-06T14:31:08.291817+02:00[Europe/Berlin]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2019-07-06T17:42:17.060512+02:00[Europe/Berlin]")
 
 public class InlineObject106   {
-  @JsonProperty("arg1")
-  private OpenbaseUnitTemplateUnitType arg1;
-
   @JsonProperty("arg0")
   private String arg0;
-
-  public InlineObject106 arg1(OpenbaseUnitTemplateUnitType arg1) {
-    this.arg1 = arg1;
-    return this;
-  }
-
-  /**
-   * Get arg1
-   * @return arg1
-  */
-  @ApiModelProperty(value = "")
-
-  @Valid
-
-  public OpenbaseUnitTemplateUnitType getArg1() {
-    return arg1;
-  }
-
-  public void setArg1(OpenbaseUnitTemplateUnitType arg1) {
-    this.arg1 = arg1;
-  }
 
   public InlineObject106 arg0(String arg0) {
     this.arg0 = arg0;
@@ -73,13 +48,12 @@ public class InlineObject106   {
       return false;
     }
     InlineObject106 inlineObject106 = (InlineObject106) o;
-    return Objects.equals(this.arg1, inlineObject106.arg1) &&
-        Objects.equals(this.arg0, inlineObject106.arg0);
+    return Objects.equals(this.arg0, inlineObject106.arg0);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(arg1, arg0);
+    return Objects.hash(arg0);
   }
 
   @Override
@@ -87,7 +61,6 @@ public class InlineObject106   {
     StringBuilder sb = new StringBuilder();
     sb.append("class InlineObject106 {\n");
     
-    sb.append("    arg1: ").append(toIndentedString(arg1)).append("\n");
     sb.append("    arg0: ").append(toIndentedString(arg0)).append("\n");
     sb.append("}");
     return sb.toString();

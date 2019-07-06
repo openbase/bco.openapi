@@ -217,7 +217,7 @@ public class Generator {
     }
 
     private static boolean isSupportedType(final Class clazz) {
-        return isReferencedType(clazz) || clazz.equals(String.class) || clazz.equals(Boolean.class) || clazz.equals(boolean.class);
+        return isReferencedType(clazz) || clazz.equals(String.class) || clazz.equals(Boolean.class) || clazz.equals(boolean.class) || clazz.equals(double.class) || clazz.equals(Double.class);
     }
 
     private static void addType(final Map<String, Object> objectToAddTo, final Class type) throws CouldNotPerformException {
@@ -244,6 +244,8 @@ public class Generator {
             return "string";
         } else if (clazz.equals(Boolean.class) || clazz.equals(boolean.class)) {
             return "boolean";
+        } else if (clazz.equals(Double.class) || clazz.equals(double.class)) {
+            return "double";
         } else {
             return clazz.getSimpleName();
         }

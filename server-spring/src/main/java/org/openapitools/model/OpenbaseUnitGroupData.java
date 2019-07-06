@@ -28,7 +28,7 @@ import javax.validation.constraints.*;
 /**
  * OpenbaseUnitGroupData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2019-07-06T14:31:08.291817+02:00[Europe/Berlin]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2019-07-06T17:42:17.060512+02:00[Europe/Berlin]")
 
 public class OpenbaseUnitGroupData   {
   @JsonProperty("action")
