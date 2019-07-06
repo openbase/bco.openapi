@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.openbase:jul.pattern:2.0-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/jul.pattern/2.0-SNAPSHOT/jul.pattern-2.0-20190617.132704-221.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/jul.pattern/2.0-SNAPSHOT/jul.pattern-2.0-SNAPSHOT.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/jul.pattern/2.0-SNAPSHOT/jul.pattern-2.0-20190617.132704-221-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/jul.pattern/2.0-SNAPSHOT/jul.pattern-2.0-SNAPSHOT-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/jul.pattern/2.0-SNAPSHOT/jul.pattern-2.0-20190617.132704-221-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/jul.pattern/2.0-SNAPSHOT/jul.pattern-2.0-SNAPSHOT-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

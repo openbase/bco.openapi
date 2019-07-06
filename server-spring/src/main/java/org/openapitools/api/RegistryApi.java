@@ -114,7 +114,7 @@ public interface RegistryApi {
     default ResponseEntity<List<OpenbaseActivityConfig>> registryActivityGetActivityConfigsGet() {
         class ReturnClass extends ArrayList<OpenbaseActivityConfig>{};
         try {
-            return ResponseEntity.ok(RegisrtyRPCProcessor.invokeMethod(null, new ReturnClass().getClass()));
+            return ResponseEntity.ok(RegisrtyRPCProcessor.invokeMethod(null, ReturnClass.class));
         } catch (Exception e) {
             ExceptionPrinter.printHistory(e, LoggerFactory.getLogger(RegistryApi.class));
             return ResponseEntity.status(500).build();
@@ -1105,16 +1105,12 @@ public interface RegistryApi {
         consumes = { "application/json" },
         method = RequestMethod.POST)
     default ResponseEntity<OpenbaseServiceTemplate> registryTemplateGetServiceTemplateByTypePost(@ApiParam(value = "" ,required=true )  @Valid @RequestBody InlineObject14 inlineObject14) {
-        getRequest().ifPresent(request -> {
-            for (MediaType mediaType: MediaType.parseMediaTypes(request.getHeader("Accept"))) {
-                if (mediaType.isCompatibleWith(MediaType.valueOf("application/json"))) {
-                    ApiUtil.setExampleResponse(request, "application/json", "{  \"meta_config\" : {    \"entry\" : [ {      \"value\" : \"value\",      \"key\" : \"key\"    }, {      \"value\" : \"value\",      \"key\" : \"key\"    } ]  },  \"super_type\" : [ null, null ],  \"id\" : \"id\",  \"label\" : {    \"entry\" : [ {      \"value\" : [ \"value\", \"value\" ],      \"key\" : \"key\"    }, {      \"value\" : [ \"value\", \"value\" ],      \"key\" : \"key\"    } ]  }}");
-                    break;
-                }
-            }
-        });
-        return new ResponseEntity<>(HttpStatus.NOT_IMPLEMENTED);
-
+        try {
+            return ResponseEntity.ok(RegisrtyRPCProcessor.invokeMethod(inlineObject14, OpenbaseServiceTemplate.class));
+        } catch (CouldNotPerformException e) {
+            ExceptionPrinter.printHistory(e, LoggerFactory.getLogger(RegistryApi.class));
+            return ResponseEntity.status(500).build();
+        }
     }
 
 

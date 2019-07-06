@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.openbase:bco.dal.lib:2.0-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/bco.dal.lib/2.0-SNAPSHOT/bco.dal.lib-2.0-20190706.091021-282.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/bco.dal.lib/2.0-SNAPSHOT/bco.dal.lib-2.0-20190706.112834-283.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/bco.dal.lib/2.0-SNAPSHOT/bco.dal.lib-2.0-20190706.091021-282-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/bco.dal.lib/2.0-SNAPSHOT/bco.dal.lib-2.0-20190706.112834-283-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/bco.dal.lib/2.0-SNAPSHOT/bco.dal.lib-2.0-20190706.091021-282-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openbase/bco.dal.lib/2.0-SNAPSHOT/bco.dal.lib-2.0-20190706.112834-283-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

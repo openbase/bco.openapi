@@ -114,6 +114,7 @@ public class Generator {
 
         final Set<String> methodNameSet = new HashSet<>();
         for (final Method method : registryInterface.getMethods()) {
+
             if (methodsToIgnore.contains(method)) {
                 continue;
             }
@@ -123,9 +124,8 @@ public class Generator {
                 continue;
             }
 
-            //TODO: reactivate check after removal of duplicated registry methods
             if (methodNameSet.contains(method.getName())) {
-                //throw new CouldNotPerformException("Could not add method[" + method.getName() + "] for [" + registryInterface.getSimpleName() + "] because method with same name is defined more than once!");
+                throw new CouldNotPerformException("Could not add method[" + method.getName() + "] for [" + registryInterface.getSimpleName() + "] because method with same name is defined more than once!");
             }
 
             methodNameSet.add(method.getName());
