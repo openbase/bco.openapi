@@ -3532,6 +3532,21 @@ info:
   version: 0.1.9
 openapi: 3.0.0
 paths:
+  /unit/applyAction:
+    post:
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OpenbaseActionParameter'
+      responses:
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OpenbaseActionDescription'
   /registry/template/getSuperServiceTypes:
     post:
       requestBody:
