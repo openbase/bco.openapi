@@ -476,6 +476,7 @@ public interface RegistryApi {
         consumes = { "application/json" },
         method = RequestMethod.POST)
     default ResponseEntity<Boolean> registryClassContainsAppClassByIdPost(@ApiParam(value = "" ,required=true )  @Valid @RequestBody InlineObject44 inlineObject44) {
+        System.out.println("Received request: " + inlineObject44);
         return new ResponseEntity<>(HttpStatus.NOT_IMPLEMENTED);
 
     }

@@ -1,12 +1,6 @@
-[submodule "swagger-codegen"]
-	path = swagger-codegen
-	url = https://github.com/swagger-api/swagger-codegen.git
 [submodule "protoToOpenAPISchema"]
 	path = protoToOpenAPISchema
 	url = https://github.com/openbase/protoToOpenAPISchema.git
 [submodule "type"]
 	path = type
 	url = https://github.com/openbase/type.git
-[submodule "openapi-generator"]
-	path = openapi-generator
-	url = https://github.com/OpenAPITools/openapi-generator.git
