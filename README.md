@@ -1,4 +1,7 @@
-# BCO OpenAPI Repository 
+# BCO OpenAPI Repository
+
+**Project no longer supported by openbase**
+
 This repository contains the BCO OpenAPI description which can be used to generate the OpenAPI client and server interfaces of BCO.
 Furthermore, this repository contains all required generators to generate the schemata from the openbase type library and the api description based on the BCO interfaces. 
 
